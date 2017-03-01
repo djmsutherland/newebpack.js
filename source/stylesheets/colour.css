@@ -1,0 +1,42 @@
+@import "variables.css";
+
+/* Primary colours */
+.colour-scale-0 { color: var(--scale-0) }
+.colour-scale-20 { color: var(--scale-20) }
+.colour-scale-40 { color: var(--scale-40) }
+.colour-scale-60 { color: var(--scale-60) }
+.colour-scale-80 { color: var(--scale-80) }
+.colour-scale-90 { color: var(--scale-90) }
+.colour-scale-95 { color: var(--scale-95) }
+.colour-scale-100 { color: var(--scale-100) }
+
+/* Secondary colours */
+.colour-green { color: var(--green-default) }
+.colour-green-light { color: var(--green-light) }
+.colour-green-dark { color: var(--green-dark) }
+.colour-green-darker { color: var(--green-darker) }
+.colour-green-darkest { color: var(--green-darkest) }
+
+.colour-lime { color: var(--lime-default) }
+.colour-lime-light { color: var(--lime-light) }
+.colour-lime-dark { color: var(--lime-dark) }
+.colour-lime-darker { color: var(--lime-darker) }
+.colour-lime-darkest { color: var(--lime-darkest) }
+
+.colour-magenta { color: var(--magenta-default) }
+.colour-magenta-light { color: var(--magenta-light) }
+.colour-magenta-dark { color: var(--magenta-dark) }
+.colour-magenta-darker { color: var(--magenta-darker) }
+.colour-magenta-darkest { color: var(--magenta-darkest) }
+
+.colour-orange { color: var(--orange-default) }
+.colour-orange-light { color: var(--orange-light) }
+.colour-orange-dark { color: var(--orange-dark) }
+.colour-orange-darker { color: var(--orange-darker) }
+.colour-orange-darkest { color: var(--orange-darkest) }
+
+.colour-purple { color: var(--purple-default) }
+.colour-purple-light { color: var(--purple-light) }
+.colour-purple-dark { color: var(--purple-dark) }
+.colour-purple-darker { color: var(--purple-darker) }
+.colour-purple-darkest { color: var(--purple-darkest) }

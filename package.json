@@ -1,15 +1,15 @@
 {
-  "name": "newebpack.js",
+  "name": "sensis-ui-components",
   "version": "1.0.0",
-  "description": "Using Webpack for Production JavaScript Applications - Kent C. Dodds",
+  "description": "Sensis user interface components",
   "main": "distribute/index.js",
   "scripts": {
     "build": "webpack --env.dev",
     "build:prod": "webpack --env.prod -p",
     "clean": "rimraf distribute",
     "clean:copy": "npm run clean && npm run copy",
-    "copy": "mkdir distribute && cp source/index.html distribute/index.html",
-    "lint": "eslint source",
+    "copy": "mkdir distribute && cp source/index.html source/favicon.png distribute/index.html",
+    "lint": "eslint *.js source",
     "prebuild": "npm run clean:copy",
     "prebuild:prod": "npm run clean:copy",
     "start": "webpack-dev-server --env.dev --content-base source",
@@ -19,23 +19,18 @@
     "validate:dev": "webpack-validator webpack.config.js --env.dev",
     "validate:prod": "webpack-validator webpack.config.js --env.prod"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/djmsutherland/newebpack.js.git"
-  },
   "author": "Dan Sutherland",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/djmsutherland/newebpack.js/issues"
-  },
-  "homepage": "https://github.com/djmsutherland/newebpack.js#readme",
   "devDependencies": {
+    "autoprefixer": "6.7.6",
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
     "chai": "^3.5.0",
     "css-loader": "^0.26.2",
     "eslint": "^3.16.1",
     "eslint-loader": "^1.6.3",
+    "extract-text-webpack-plugin": "2.0.0",
+    "file-loader": "0.10.1",
     "karma": "^1.5.0",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^2.0.0",
@@ -43,8 +38,12 @@
     "karma-webpack": "^2.0.2",
     "mocha": "^3.2.0",
     "npm-run-all": "^4.0.2",
+    "postcss-cssnext": "2.9.0",
+    "postcss-import": "9.1.0",
+    "postcss-loader": "1.3.3",
     "rimraf": "^2.6.1",
     "style-loader": "^0.13.2",
+    "url-loader": "0.5.8",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1",
     "webpack-validator": "^2.3.0"

@@ -1,0 +1,56 @@
+@import "variables.css";
+
+body {
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+.display-3 {
+  font-size: var(--size-display-3);
+}
+
+.display-2 {
+  font-size: var(--size-display-2);
+}
+
+.display-1 {
+  font-size: var(--size-display-1);
+  line-height: var(--leading-display-1);
+}
+
+.headline {
+  font-size: var(--size-headline);
+  line-height: var(--leading-headline);
+}
+
+.title {
+  font-size: var(--size-title);
+  font-weight: 700;
+}
+
+.subheading-2 {
+  font-size: var(--size-subheading);
+  font-weight: 700;
+  line-height: var(--leading-subheading-2);
+}
+
+.subheading-1 {
+  font-size: var(--size-subheading);
+  line-height: var(--leading-subheading-1);
+}
+
+.paragraph-2 {
+  font-size: var(--size-paragraph);
+  font-weight: 700;
+  line-height: var(--leading-paragraph-2);
+}
+
+.paragraph-1 {
+  font-size: var(--size-paragraph);
+  line-height: var(--leading-paragraph-1);
+}
+
+.button {
+  font-size: var(--size-paragraph);
+  font-weight: 700;
+}

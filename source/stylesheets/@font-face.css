@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Netto";
+  font-weight: 700;
+  src: url("../fonts/netto_bold.ttf"),
+       url("../fonts/netto_bold.woff"),
+       url("../fonts/netto_bold.eot");
+}
+
+@font-face {
+  font-family: "Netto";
+  font-weight: 400;
+  src: url("../fonts/netto_regular.ttf"),
+       url("../fonts/netto_regular.woff"),
+       url("../fonts/netto_regular.eot");
+}

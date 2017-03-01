@@ -1,3 +1,5 @@
+import "../stylesheets/index.css"
+
 const index = () => {
   return true
 }

@@ -1,0 +1,72 @@
+:root {
+  /* Logos */
+  --logo-horizontal: url("../images/logos/logo-horizontal.png");
+  --logo-wordmark: url("../images/logos/logo-wordmark.png");
+  --logo-stacked: url("../images/logos/logo-stacked.png");
+  --logo-icon: url("../images/logos/logo-icon.png");
+
+  /* Font */
+  --font-family: "Netto", Arial, sans-serif;
+
+  /* Font sizes */
+  --size-display-3: 56px;
+  --size-display-2: 45px;
+  --size-display-1: 34px;
+  --size-headline: 24px;
+  --size-title: 20px;
+  --size-subheading: 16px;
+  --size-paragraph: 14px;
+
+  /* Font leading */
+  --leading-display-1: 1.08;
+  --leading-headline: 1.33;
+  --leading-subheading-2: 1.75;
+  --leading-subheading-1: 1.5;
+  --leading-paragraph-2: 1.71;
+  --leading-paragraph-1: 1.43;
+
+  /* Primary greyscale */
+  --scale-0: #000;
+  --scale-20: #333;
+  --scale-40: #666;
+  --scale-60: #999;
+  --scale-80: #ccc;
+  --scale-90: #e6e6e6;
+  --scale-95: #f3f3f3;
+  --scale-100: #fff;
+
+  /* Secondary greens */
+  --green-default: #47b347;
+  --green-light: #4cbf4c;
+  --green-dark: #3d993d;
+  --green-darker: #2e732e;
+  --green-darkest: #143314;
+
+  /* Secondary limes */
+  --lime-default: #cbd92b;
+  --lime-light: #d7e62e;
+  --lime-dark: #b3bf26;
+  --lime-darker: #8f991e;
+  --lime-darkest: #535911;
+
+  /* Secondary magentas */
+  --magenta-default: #e6177e;
+  --magenta-light: #f31885;
+  --magenta-dark: #cc287a;
+  --magenta-darker: #a6105b;
+  --magenta-darkest: #660a38;
+
+  /* Secondary oranges */
+  --orange-default: #e67300;
+  --orange-light: #f37900;
+  --orange-dark: #cc6600;
+  --orange-darker: #a65300;
+  --orange-darkest: #663300;
+
+  /* Secondary purples */
+  --purple-default: #b3239b;
+  --purple-light: #bf26a6;
+  --purple-dark: #991e85;
+  --purple-darker: #731763;
+  --purple-darkest: #330a2c;
+}
