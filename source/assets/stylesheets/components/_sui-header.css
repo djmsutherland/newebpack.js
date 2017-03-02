@@ -1,0 +1,40 @@
+@import "../variables.css";
+
+.sui-header {
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  padding: var(--spacing-16);
+  background-color: var(--white);
+}
+
+.sui-header-logo {
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  border-radius: var(--spacing-24);
+  padding: 0.75em 0.6em;
+  width: var(--spacing-48);
+  height: var(--spacing-48);
+  background-color: var(--grey-lightest);
+}
+
+.sui-header-logo img:last-child {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .sui-header-logo {
+    margin: 0 0;
+    width: 8rem;
+    height: 4rem;
+    background-color: var(--white);
+  }
+
+  .sui-header-logo img:first-child {
+    display: none;
+  }
+
+  .sui-header-logo img:last-child {
+    display: block;
+  }
+}

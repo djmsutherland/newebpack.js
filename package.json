@@ -31,6 +31,7 @@
     "eslint-loader": "^1.6.3",
     "extract-text-webpack-plugin": "2.0.0",
     "file-loader": "0.10.1",
+    "html-loader": "0.4.5",
     "karma": "^1.5.0",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^2.0.0",
@@ -47,5 +48,9 @@
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1",
     "webpack-validator": "^2.3.0"
+  },
+  "dependencies": {
+    "@polymer/polymer": "1.2.5-npm-test.2",
+    "webcomponents-lite": "0.6.0"
   }
 }

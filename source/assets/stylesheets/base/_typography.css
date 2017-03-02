@@ -1,4 +1,4 @@
-@import "variables.css";
+@import "../variables.css";
 
 body {
   font-family: var(--font-family);
@@ -18,9 +18,12 @@ body {
   line-height: var(--leading-display-1);
 }
 
+h1, h2, h3, h4, h5, h6,
 .headline {
   font-size: var(--size-headline);
   line-height: var(--leading-headline);
+  margin-top: 0.1875rem;
+  margin-bottom: 0.4375rem;
 }
 
 .title {
@@ -32,22 +35,40 @@ body {
   font-size: var(--size-subheading);
   font-weight: 700;
   line-height: var(--leading-subheading-2);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 .subheading-1 {
   font-size: var(--size-subheading);
   line-height: var(--leading-subheading-1);
+  margin-top: 0.125rem;
+  margin-bottom: 0.375rem;
 }
 
 .paragraph-2 {
   font-size: var(--size-paragraph);
   font-weight: 700;
   line-height: var(--leading-paragraph-2);
+  margin-top: 0.1875rem;
+  margin-bottom: 0.5625rem;
 }
 
 .paragraph-1 {
   font-size: var(--size-paragraph);
   line-height: var(--leading-paragraph-1);
+  margin-top: 0.0625rem;
+  margin-bottom: 0.6875rem;
+}
+
+.label {
+  font-size: var(--size-paragraph);
+  font-weight: 700;
+}
+
+.label-small {
+  font-size: var(--size-small);
+  font-weight: 700;
 }
 
 .button {

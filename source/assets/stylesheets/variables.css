@@ -9,13 +9,14 @@
   --font-family: "Netto", Arial, sans-serif;
 
   /* Font sizes */
-  --size-display-3: 56px;
-  --size-display-2: 45px;
-  --size-display-1: 34px;
-  --size-headline: 24px;
-  --size-title: 20px;
-  --size-subheading: 16px;
-  --size-paragraph: 14px;
+  --size-display-3: 3.5rem;
+  --size-display-2: 2.875rem;
+  --size-display-1: 2.125rem;
+  --size-headline: 1.5rem;
+  --size-title: 1.125rem;
+  --size-subheading: 1rem;
+  --size-paragraph: 0.875rem;
+  --size-small: 0.625rem;
 
   /* Font leading */
   --leading-display-1: 1.08;
@@ -25,15 +26,17 @@
   --leading-paragraph-2: 1.71;
   --leading-paragraph-1: 1.43;
 
-  /* Primary greyscale */
-  --scale-0: #000;
-  --scale-20: #333;
-  --scale-40: #666;
-  --scale-60: #999;
-  --scale-80: #ccc;
-  --scale-90: #e6e6e6;
-  --scale-95: #f3f3f3;
-  --scale-100: #fff;
+  /* Primary colours */
+  --black: #000;
+  --white: #fff;
+
+  /* Greyscale */
+  --grey-darkest: #333;
+  --grey-darker: #666;
+  --grey-dark: #999;
+  --grey-light: #ccc;
+  --grey-lighter: #e6e6e6;
+  --grey-lightest: #f3f3f3;
 
   /* Secondary greens */
   --green-default: #47b347;
@@ -69,4 +72,12 @@
   --purple-dark: #991e85;
   --purple-darker: #731763;
   --purple-darkest: #330a2c;
+
+  /* Spacing */
+  --spacing-0: 0;
+  --spacing-8: 0.5rem;
+  --spacing-16: 1rem;
+  --spacing-24: 1.5rem;
+  --spacing-32: 2rem;
+  --spacing-48: 3rem;
 }

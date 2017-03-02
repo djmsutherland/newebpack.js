@@ -1,14 +1,16 @@
-@import "variables.css";
+@import "../variables.css";
 
 /* Primary colours */
-.colour-scale-0 { color: var(--scale-0) }
-.colour-scale-20 { color: var(--scale-20) }
-.colour-scale-40 { color: var(--scale-40) }
-.colour-scale-60 { color: var(--scale-60) }
-.colour-scale-80 { color: var(--scale-80) }
-.colour-scale-90 { color: var(--scale-90) }
-.colour-scale-95 { color: var(--scale-95) }
-.colour-scale-100 { color: var(--scale-100) }
+.colour-black { color: var(--black) }
+.colour-white { color: var(--white) }
+
+/* Greyscale colours */
+.colour-grey-darkest { color: var(--grey-darkest) }
+.colour-grey-darker { color: var(--grey-darker) }
+.colour-grey-dark { color: var(--grey-dark) }
+.colour-grey-light { color: var(--grey-light) }
+.colour-grey-lighter { color: var(--grey-lighter) }
+.colour-grey-lightest { color: var(--grey-lightest) }
 
 /* Secondary colours */
 .colour-green { color: var(--green-default) }

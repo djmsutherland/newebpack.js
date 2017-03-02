@@ -1,0 +1,18 @@
+@import "../variables";
+
+.sui-alert {
+  box-sizing: border-box;
+  position: relative;
+  color: var(--white);
+  padding: var(--spacing-16);
+  background-color: var(--grey-darkest);
+}
+
+.sui-alert-x {
+  cursor: pointer;
+  position: absolute;
+  top: var(--spacing-16);
+  right: var(--spacing-16);
+  width: var(--spacing-16);
+  height: var(--spacing-16);
+}

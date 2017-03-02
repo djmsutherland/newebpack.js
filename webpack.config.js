@@ -6,7 +6,7 @@ const cssnext = require("postcss-cssnext")
 
 module.exports = env => {
   return {
-    entry: "./javascripts/index.js",
+    entry: "./assets/javascripts/index.js",
     output: {
       filename: "sensis-ui-components.js",
       path: resolve(__dirname, "distribute"),
@@ -18,6 +18,7 @@ module.exports = env => {
     module: {
       loaders: [
         { test: /\.css$/, loader: "style-loader!css-loader!postcss-loader" },
+        { test: /\.html$/, loader: "html-loader" },
         { test: /\.js$/, loader: "babel-loader!eslint-loader", exclude: /node_modules/ },
         { test: /\.woff$/, loader: "url-loader" },
         { test: /\.(ttf|eot|svg)$/, loader: "file-loader" }

@@ -1,0 +1,61 @@
+@import "../variables";
+
+.sui-tabs {
+  display: flex;
+  margin-top: auto;
+  justify-content: space-between;
+  border-top: 1px solid var(--black);
+  height: var(--spacing-48);
+  background-color: var(--white);
+}
+
+.sui-tabs a {
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+}
+
+.sui-tabs a:hover {
+  background-color: var(--grey-lightest);
+}
+
+.sui-tab-icon {
+  display: block;
+  margin: 10px auto 5px;
+  width: var(--spacing-16);
+  height: var(--spacing-16);
+}
+
+/* Background images */
+.sui-tabs a:nth-child(1) .sui-tab-icon {
+  background-image: url("../../assets/images/icons/profile/profile-default.svg");
+}
+
+.sui-tabs a:nth-child(2) .sui-tab-icon {
+  background-image: url("../../assets/images/icons/star/star-default.svg");
+}
+
+.sui-tabs a:nth-child(3) .sui-tab-icon {
+  background-image: url("../../assets/images/icons/calendar/calendar-default.svg");
+}
+
+.sui-tabs a:nth-child(4) .sui-tab-icon {
+  background-image: url("../../assets/images/icons/check/check-default.svg");
+}
+
+/* Hover */
+.sui-tabs a:nth-child(1):hover .sui-tab-icon {
+  background-image: url("../../assets/images/icons/profile/profile-orange.svg");
+}
+
+.sui-tabs a:nth-child(2):hover .sui-tab-icon {
+  background-image: url("../../assets/images/icons/star/star-orange.svg");
+}
+
+.sui-tabs a:nth-child(3):hover .sui-tab-icon {
+  background-image: url("../../assets/images/icons/calendar/calendar-orange.svg");
+}
+
+.sui-tabs a:nth-child(4):hover .sui-tab-icon {
+  background-image: url("../../assets/images/icons/check/check-orange.svg");
+}
