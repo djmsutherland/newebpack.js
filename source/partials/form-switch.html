@@ -1,0 +1,16 @@
+<fieldset class="sui-field">
+  <div class="sui-switch-label">
+    {{description}}
+  </div>
+  <div class="sui-switch">
+    <input
+      class="sui-switch-input"
+      :id="title"
+      :type="type"
+      :name="group"
+    >
+    <label class="sui-switch-paddle" :for="title">
+      <span class="show-for-sr">{{description}}</span>
+    </label>
+  </div>
+</fieldset>
