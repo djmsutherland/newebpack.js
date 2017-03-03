@@ -33,7 +33,7 @@
         "brace-style": "error",
         "callback-return": "error",
         "camelcase": "error",
-        "capitalized-comments": "error",
+        "capitalized-comments": "off",
         "class-methods-use-this": "error",
         "comma-dangle": "error",
         "comma-spacing": [
@@ -71,7 +71,7 @@
             "expression"
         ],
         "generator-star-spacing": "error",
-        "global-require": "error",
+        "global-require": "warn",
         "guard-for-in": "error",
         "handle-callback-err": "error",
         "id-blacklist": "error",
@@ -155,7 +155,6 @@
         "no-negated-condition": "error",
         "no-negated-in-lhs": "error",
         "no-nested-ternary": "error",
-        "no-new": "error",
         "no-new-func": "error",
         "no-new-object": "error",
         "no-new-require": "error",
@@ -217,7 +216,7 @@
                 "allowMultiplePropertiesPerLine": true
             }
         ],
-        "object-shorthand": "error",
+        "object-shorthand": "off",
         "one-var": "off",
         "one-var-declaration-per-line": "error",
         "operator-assignment": "error",

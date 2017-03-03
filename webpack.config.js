@@ -14,6 +14,12 @@ module.exports = env => {
     },
     context: resolve(__dirname, "source"),
     devtool: env.prod ? "source-map" : "eval",
+    resolve: {
+      alias: {
+        // 'LIB_NAME$': 'DESTINATION',
+        "vue$": "vue/dist/vue.common.js"
+      }
+    },
     bail: env.prod,
     module: {
       loaders: [
