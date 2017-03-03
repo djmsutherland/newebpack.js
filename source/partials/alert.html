@@ -1,0 +1,14 @@
+<transition name="fade">
+  <section v-if="shared.showAlert" class="sui-alert">
+    <span
+      class="sui-alert-x"
+      @click="{shared.showAlert = !shared.showAlert}"
+    >
+      <img src="/assets/images/icons/close-icon.png">
+    </span>
+    <p class="paragraph-2">{{title}}</p>
+    <p class="paragraph-1">
+      {{description}}
+    </p>
+  </section>
+</transition>
