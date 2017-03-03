@@ -80,4 +80,9 @@
   --spacing-24: 1.5rem;
   --spacing-32: 2rem;
   --spacing-48: 3rem;
+
+  /* Switch */
+  --switch-height: 1rem;
+  --switch-width: 2rem;
+  --switch-paddle-width: 1rem;
 }

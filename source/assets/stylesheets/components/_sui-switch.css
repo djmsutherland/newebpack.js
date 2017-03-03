@@ -1,0 +1,85 @@
+@import "../variables";
+
+.sui-switch {
+  height: var(--switch-height);
+  position: relative;
+  margin-bottom: var(--spacing-16);
+  box-sizing: border-box;
+  padding: 0;
+  outline: 0;
+  font-size: var(--size-paragraph);
+  font-weight: bold;
+  color: var(--white);
+  user-select: none;
+}
+
+.sui-switch-input {
+  position: absolute;
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+.sui-switch-paddle {
+  position: relative;
+  display: block;
+  width: var(--switch-width);
+  height: var(--switch-height);
+  border-radius: 100em;
+  border: 1px solid var(--black);
+  background: var(--grey-light);
+  transition: all 0.25s ease-out;
+  font-weight: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.sui-switch-paddle::after {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  display: block;
+  width: var(--switch-paddle-width);
+  height: var(--switch-height);
+  transform: translate3d(0, 0, 0);
+  border: 1px solid var(--black);
+  border-radius: 100%;
+  background: var(--white);
+  transition: all 0.25s ease-out;
+  content: '';
+}
+
+input:checked ~ .sui-switch-paddle {
+  background: var(--magenta-default);
+}
+
+input:checked ~ .sui-switch-paddle::after {
+  left: 0.938rem;
+}
+
+[data-whatinput='mouse'] input:focus ~ .sui-switch-paddle {
+  outline: 0;
+}
+
+.sui-switch-active,
+.sui-switch-inactive {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sui-switch-active {
+  left: 8%;
+  display: none;
+}
+
+input:checked + label > .sui-switch-active {
+  display: block;
+}
+
+.sui-switch-inactive {
+  right: 15%;
+}
+
+input:checked + label > .sui-switch-inactive {
+  display: none;
+}
