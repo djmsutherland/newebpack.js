@@ -1,9 +1,23 @@
 @import "../variables";
 
+.sui-switch-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sui-field .sui-switch-container {
+  padding: var(--spacing-16) 0;
+  border-bottom: 1px solid var(--grey-lighter);
+}
+
+.sui-field .sui-switch-container:last-child {
+  border-bottom: 0;
+}
+
 .sui-switch {
   height: var(--switch-height);
   position: relative;
-  margin-bottom: var(--spacing-16);
   box-sizing: border-box;
   padding: 0;
   outline: 0;

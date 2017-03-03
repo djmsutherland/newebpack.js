@@ -13,6 +13,10 @@
   padding: 0;
 }
 
+.sui-field-group {
+  height: auto;
+}
+
 .sui-label {
   position: absolute;
   top: 50%;
