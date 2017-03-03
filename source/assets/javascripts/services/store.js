@@ -1,5 +1,5 @@
 const Store = {
-  showAlert: true
+  showAlert: false
 };
 
 export default Store;
