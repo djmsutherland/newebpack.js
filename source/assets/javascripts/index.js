@@ -1,4 +1,5 @@
 import "../stylesheets/index.css"
+import "./_sui-input"
 
 // Components
 import "./components/form-switch";

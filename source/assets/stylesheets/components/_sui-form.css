@@ -25,6 +25,14 @@
   transition: all 150ms ease-in-out;
 }
 
+.sui-select {
+  appearance: none;
+  background-image: url("../../assets/images/icons/arrows/default/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - var(--spacing-16)) center;
+}
+
+.sui-select,
 .sui-input {
   box-sizing: border-box;
   border: 1px solid var(--black);
@@ -38,6 +46,8 @@
   outline: none;
 }
 
+.sui-label.active,
+.sui-select:focus + .sui-label,
 .sui-input:focus + .sui-label {
   font-size: 80%;
   top: 0%;
