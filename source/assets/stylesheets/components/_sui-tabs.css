@@ -62,8 +62,8 @@
 
 @media (--desktop) {
   .sui-tabs {
+    order: 2;
     align-self: center;
-    order: 1;
     margin-top: var(--spacing-32);
     border: 1px solid black;
     border-radius: var(--spacing-8);

@@ -1,5 +1,11 @@
 @import "../variables";
 
+.sui-form-container {
+  align-self: center;
+  width: 100%;
+  max-width: 30rem;
+}
+
 .sui-form {
   padding: 0 var(--spacing-16);
 }
