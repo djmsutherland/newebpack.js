@@ -22,7 +22,7 @@
   display: none;
 }
 
-@media (min-width: 960px) {
+@media (--tablet) {
   .sui-header-logo {
     margin: 0 0;
     width: 8rem;

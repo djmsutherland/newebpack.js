@@ -59,3 +59,25 @@
 .sui-tabs a:nth-child(4):hover .sui-tab-icon {
   background-image: url("../../assets/images/icons/check/check-orange.svg");
 }
+
+@media (--desktop) {
+  .sui-tabs {
+    align-self: center;
+    order: 1;
+    margin-top: var(--spacing-32);
+    border: 1px solid black;
+    border-radius: var(--spacing-8);
+    width: 100%;
+    max-width: 30rem;
+  }
+
+  .sui-tabs a:first-child {
+    border-top-left-radius: var(--spacing-8);
+    border-bottom-left-radius: var(--spacing-8);
+  }
+
+  .sui-tabs a:last-child {
+    border-top-right-radius: var(--spacing-8);
+    border-bottom-right-radius: var(--spacing-8);
+  }
+}

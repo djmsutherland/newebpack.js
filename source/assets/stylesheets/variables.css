@@ -85,4 +85,12 @@
   --switch-height: 1rem;
   --switch-width: 2rem;
   --switch-paddle-width: 1rem;
+
+  /* Breakpoints */
+  @custom-media --mobile-small all and (min-width: 0);
+  @custom-media --mobile-large all and (min-width: 361px);
+  @custom-media --tablet all and (min-width: 600px);
+  @custom-media --desktop all and (min-width: 841px);
+  @custom-media --desktop-large all and (min-width: 1281px);
+  @custom-media --desktop-xlarge all and (min-width: 1601px);
 }
