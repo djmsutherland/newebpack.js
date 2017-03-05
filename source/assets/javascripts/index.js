@@ -3,7 +3,7 @@ import "../stylesheets/index.css"
 
 // Components
 import "./components/alert";
-import "./components/form-switch";
+import "./components/sui-switch";
 import "./components/sui-input";
 
 import Store from "./services/store";

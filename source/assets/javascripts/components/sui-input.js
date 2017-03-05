@@ -14,7 +14,7 @@ export default Vue.component("sui-input", {
 
   computed: {
     id() {
-      return `profile-${this.title.toLowerCase().replace(/ /g, "-")}`;
+      return `sui-${this.title.toLowerCase().replace(/ /g, "-")}`;
     }
   }
 
