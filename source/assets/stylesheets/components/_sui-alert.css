@@ -4,8 +4,11 @@
   box-sizing: border-box;
   position: relative;
   color: var(--white);
-  padding: var(--spacing-16);
   background-color: var(--grey-darkest);
+}
+
+.sui-alert-inner {
+  padding: var(--spacing-16);
 }
 
 .sui-alert-x {

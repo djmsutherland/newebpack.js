@@ -2,7 +2,7 @@ import "../stylesheets/index.css"
 // import "./_sui-input"
 
 // Components
-import "./components/alert";
+import "./components/sui-alert";
 import "./components/sui-switch";
 import "./components/sui-input";
 
