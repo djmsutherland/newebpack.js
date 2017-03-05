@@ -32,20 +32,20 @@
           <p class="paragraph-1">Your profile details are used to do the thing</p>
         </section>
 
-        <form class="sui-form" action="index.html" method="post">
-          <fieldset class="sui-field">
-            <input id="profile-email" class="sui-input" type="email" data-behaviour="sui-input">
-            <label class="label sui-label" for="profile-email">Email address</label>
-          </fieldset>
-          <fieldset class="sui-field">
-            <select id="profile-role" class="sui-select">
-              <option selected value=""></option>
-              <option class="sui-option" value="dentist">Dentist</option>
-            </select>
-            <label class="label sui-label" for="profile-role">Job role</label>
-          </fieldset>
-        </form>
+      <form class="sui-form" action="index.html" method="post">
 
+        <sui-input type="email" title="Email address"></sui-input>
+
+        <sui-input type="text" title="First name"></sui-input>
+
+        <fieldset class="sui-field">
+          <select id="profile-role" class="sui-select">
+            <option selected value=""></option>
+            <option class="sui-option" value="dentist">Dentist</option>
+          </select>
+          <label class="label sui-label" for="profile-role">Job role</label>
+        </fieldset>
+      </form>
 
         <section class="sui-title-group">
           <h1 class="title">Interests</h1>

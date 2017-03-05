@@ -1,9 +1,10 @@
 import "../stylesheets/index.css"
-import "./_sui-input"
+// import "./_sui-input"
 
 // Components
 import "./components/alert";
 import "./components/form-switch";
+import "./components/sui-input";
 
 import Store from "./services/store";
 import Vue from "vue";
