@@ -1,0 +1,38 @@
+@import "../variables";
+
+.sui-body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sui-header,
+.sui-main,
+.sui-footer {
+  display: flex;
+}
+
+.sui-header {
+  order: 1;
+}
+
+.sui-main {
+  order: 2;
+}
+
+.sui-footer {
+  order: 3;
+}
+
+.sui-main {
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.sui-main {
+  flex: 1;
+}
+
+@media (--tablet) {
+  overflow: scroll;
+}
