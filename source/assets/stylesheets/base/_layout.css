@@ -16,12 +16,16 @@
   order: 1;
 }
 
-.sui-main {
+.sui-alert {
   order: 2;
 }
 
-.sui-footer {
+.sui-main {
   order: 3;
+}
+
+.sui-footer {
+  order: 4;
 }
 
 .sui-main {

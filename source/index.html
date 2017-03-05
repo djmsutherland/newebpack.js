@@ -16,90 +16,93 @@
         </div>
       </header>
 
+      <alert
+        title="notification"
+        description="Sensis offers a range of products and services, such as Search Engine Optimisation/Marketing, Social Media Services and Websites. To help us provide you with the most relevant information, please let us know a bit more about you."
+      ></alert>
+      
       <main class="sui-main">
-        <alert
-          title="notification"
-          description="Sensis offers a range of products and services, such as Search Engine Optimisation/Marketing, Social Media Services and Websites. To help us provide you with the most relevant information, please let us know a bit more about you."
-        ></alert>
-
         <!-- TODO move to submit button when we have design -->
         <a href="#" @click="shared.showAlert = true">
           Show alert
         </a>
 
-        <section class="sui-title-group">
+        <section class="sui-title-group sui-form-container">
           <h1 class="title">Profile</h1>
           <p class="paragraph-1">Your profile details are used to do the thing</p>
+
+          <form class="sui-form" action="index.html" method="post">
+
+            <sui-input type="email" title="Email address"></sui-input>
+
+            <sui-input type="text" title="First name"></sui-input>
+
+            <fieldset class="sui-field">
+              <select id="profile-role" class="sui-select">
+                <option selected value=""></option>
+                <option class="sui-option" value="dentist">Dentist</option>
+              </select>
+              <label class="label sui-label" for="profile-role">Job role</label>
+            </fieldset>
+          </form>
         </section>
 
-      <form class="sui-form" action="index.html" method="post">
 
-        <sui-input type="email" title="Email address"></sui-input>
 
-        <sui-input type="text" title="First name"></sui-input>
-
-        <fieldset class="sui-field">
-          <select id="profile-role" class="sui-select">
-            <option selected value=""></option>
-            <option class="sui-option" value="dentist">Dentist</option>
-          </select>
-          <label class="label sui-label" for="profile-role">Job role</label>
-        </fieldset>
-      </form>
-
-      <section class="sui-title-group">
+      <section class="sui-title-group sui-form-container">
         <h1 class="title">Interests</h1>
         <p class="paragraph-1">Your interests are used to do the thing.</p>
+
+        <form class="sui-form" action="index.html" method="post">
+          <fieldset class="sui-field sui-field-group">
+            <sui-switch
+              title="newsletters"
+              description="Newsletters and articles"
+              type="checkbox"
+            >
+            </sui-switch>
+            <sui-switch
+              title="products"
+              description="Product offers and updates"
+              type="checkbox"
+            >
+            </sui-switch>
+          </fieldset>
+        </form>
       </section>
 
-      <form class="sui-form" action="index.html" method="post">
-        <fieldset class="sui-field sui-field-group">
-          <sui-switch
-            title="newsletters"
-            description="Newsletters and articles"
-            type="checkbox"
-          >
-          </sui-switch>
-          <sui-switch
-            title="products"
-            description="Product offers and updates"
-            type="checkbox"
-          >
-          </sui-switch>
-        </fieldset>
-      </form>
 
-      <section class="sui-title-group">
+
+      <section class="sui-title-group sui-form-container">
         <h1 class="title">Frequency</h1>
         <p class="paragraph-1">Setting your frequency will do the thing.</p>
+
+        <form class="sui-form" action="index.html" method="post">
+          <fieldset class="sui-field sui-field-group">
+            <sui-switch
+              title="fortnightly"
+              description="Fortnightly"
+              type="radio"
+              group="radioTest"
+            >
+            </sui-switch>
+            <sui-switch
+              title="monthly"
+              description="Monthly"
+              type="radio"
+              group="radioTest"
+            >
+            </sui-switch>
+            <sui-switch
+              title="never"
+              description="Never"
+              type="radio"
+              group="radioTest"
+            >
+            </sui-switch>
+          </fieldset>
+        </form>
       </section>
-
-      <form class="sui-form" action="index.html" method="post">
-        <fieldset class="sui-field sui-field-group">
-          <sui-switch
-            title="fortnightly"
-            description="Fortnightly"
-            type="radio"
-            group="radioTest"
-          >
-          </sui-switch>
-          <sui-switch
-            title="monthly"
-            description="Monthly"
-            type="radio"
-            group="radioTest"
-          >
-          </sui-switch>
-          <sui-switch
-            title="never"
-            description="Never"
-            type="radio"
-            group="radioTest"
-          >
-          </sui-switch>
-        </fieldset>
-
-      </form>
       </main>
 
       <nav class="sui-footer sui-tabs">
