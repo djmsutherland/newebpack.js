@@ -4,6 +4,7 @@ import "./_sui-input"
 // Components
 import "./components/alert";
 import "./components/form-switch";
+import "./components/email-input";
 
 import Store from "./services/store";
 import Vue from "vue";

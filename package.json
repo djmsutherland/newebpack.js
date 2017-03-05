@@ -8,7 +8,7 @@
     "build:prod": "webpack --env.prod -p",
     "clean": "rimraf distribute",
     "clean:copy": "npm run clean && npm run copy",
-    "copy": "mkdir distribute && cp source/index.html source/favicon.png distribute/index.html",
+    "copy": "mkdir distribute && cp source/index.html source/favicon.png distribute/",
     "lint": "eslint *.js source",
     "prebuild": "npm run clean:copy",
     "prebuild:prod": "npm run clean:copy",
