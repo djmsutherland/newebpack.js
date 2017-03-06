@@ -1,72 +1,51 @@
 @import "../variables";
 
-button.green {
-  background-color: var(--green-default)
-}
-
-button.green:hover {
+button.background-colour-green:hover {
   background-color: var(--green-light)
 }
 
-button.green:active,
-button.green:focus,
-button.green:visited {
+button.background-colour-green:active,
+button.background-colour-green:focus,
+button.background-colour-green:visited {
   background-color: var(--green-dark)
 }
 
-button.lime {
-  color: var(--black);
-  background-color: var(--lime-default)
-}
-
-button.lime:hover {
+button.background-colour-lime:hover {
   background-color: var(--lime-light)
 }
 
-button.lime:active,
-button.lime:focus,
-button.lime:visited {
+button.background-colour-lime:active,
+button.background-colour-lime:focus,
+button.background-colour-lime:visited {
   background-color: var(--lime-dark)
 }
 
-button.magenta {
-  background-color: var(--magenta-default)
-}
-
-button.magenta:hover {
+button.background-colour-magenta:hover {
   background-color: var(--magenta-light)
 }
 
-button.magenta:active,
-button.magenta:focus,
-button.magenta:visited {
+button.background-colour-magenta:active,
+button.background-colour-magenta:focus,
+button.background-colour-magenta:visited {
   background-color: var(--magenta-dark)
 }
 
-button.orange {
-  background-color: var(--orange-default)
-}
-
-button.orange:hover {
+button.background-colour-orange:hover {
   background-color: var(--orange-light)
 }
 
-button.orange:active,
-button.orange:focus,
-button.orange:visited {
+button.background-colour-orange:active,
+button.background-colour-orange:focus,
+button.background-colour-orange:visited {
   background-color: var(--orange-dark)
 }
 
-button.purple {
-  background-color: var(--purple-default)
-}
-
-button.purple:hover {
+button.background-colour-purple:hover {
   background-color: var(--purple-light)
 }
 
-button.purple:active,
-button.purple:focus,
-button.purple:visited {
+button.background-colour-purple:active,
+button.background-colour-purple:focus,
+button.background-colour-purple:visited {
   background-color: var(--purple-dark)
 }
