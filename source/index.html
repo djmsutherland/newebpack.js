@@ -29,7 +29,7 @@
         </a>
 
         <sui-tabs>
-          <sui-tab name="Profile" selected="true">
+          <sui-tab name="Profile" selected="true" colour="orange">
 
             <header class="sui-title-group">
               <h1 class="title">Profile</h1>
@@ -47,15 +47,13 @@
                 :options="['Marketing manager', 'Developer', 'Designer']"
               ></sui-select>
 
-              <fieldset class="sui-field">
-                <button class="background-colour-orange" type="submit"><i class="sui-button-icon sui-icon-check"></i>Save</button>
-              </fieldset>
+              <sui-submit-button title="Save"></sui-submit-button>
 
             </form>
 
           </sui-tab>
 
-          <sui-tab name="Interests">
+          <sui-tab name="Interests" colour="lime">
 
             <header class="sui-title-group">
               <h1 class="title">Interests</h1>
@@ -77,14 +75,12 @@
                 >
                 </sui-switch>
               </fieldset>
-              <fieldset class="sui-field">
-                <button class="colour-black background-colour-lime" type="submit"><i class="sui-button-icon sui-icon-check"></i>Save</button>
-              </fieldset>
+              <sui-submit-button title="Save"></sui-submit-button>
             </form>
 
           </sui-tab>
 
-          <sui-tab name="Frequency">
+          <sui-tab name="Frequency" colour="magenta">
 
             <header class="sui-title-group">
               <h1 class="title">Frequency</h1>
@@ -115,9 +111,7 @@
                 >
                 </sui-switch>
               </fieldset>
-              <fieldset class="sui-field">
-                <button class="background-colour-magenta" type="submit"><i class="sui-button-icon sui-icon-check"></i>Save</button>
-              </fieldset>
+              <sui-submit-button title="Save"></sui-submit-button>
             </form>
 
           </sui-tab>

@@ -63,6 +63,14 @@
 }
 
 input:checked ~ .sui-switch-paddle {
+  background: var(--orange-default);
+}
+
+.tab-lime input:checked ~ .sui-switch-paddle {
+  background: var(--lime-default);
+}
+
+.tab-magenta input:checked ~ .sui-switch-paddle {
   background: var(--magenta-default);
 }
 
