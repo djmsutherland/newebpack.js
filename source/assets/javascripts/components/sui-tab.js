@@ -6,7 +6,8 @@ export default Vue.component("sui-tab", {
 
   props: {
     name: { required: true },
-    selected: { default: false }
+    selected: { default: false },
+    colour: { required: true }
   },
 
   data() {

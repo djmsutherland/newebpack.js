@@ -6,6 +6,7 @@ export default Vue.component("sui-tabs", {
 
   data() {
     return {
+      colourClass: "tab-orange",
       tabs: []
     };
   },
@@ -19,6 +20,7 @@ export default Vue.component("sui-tabs", {
       this.tabs.forEach(tab => {
         tab.isActive = tab.href === selectedTab.href;
       });
+      this.colourClass = `tab-${selectedTab.colour}`;
     }
   }
 

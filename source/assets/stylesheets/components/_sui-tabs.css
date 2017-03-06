@@ -20,6 +20,8 @@
   cursor: pointer;
   flex: 1;
   text-align: center;
+  color: var(--black);
+  text-decoration: none;
 }
 
 .sui-tabs a:hover {
@@ -50,21 +52,68 @@
   background-image: url("../../assets/images/icons/check/check-default.svg");
 }
 
-/* Hover */
-.sui-tabs a:nth-child(1):hover .sui-tab-icon {
+/* Hover and Active states */
+/* Default (orange) */
+.sui-tabs a:nth-child(1):hover .sui-tab-icon,
+.sui-tabs a:nth-child(1).is-active .sui-tab-icon {
   background-image: url("../../assets/images/icons/profile/profile-orange.svg");
 }
 
-.sui-tabs a:nth-child(2):hover .sui-tab-icon {
+.sui-tabs a:nth-child(2):hover .sui-tab-icon,
+.sui-tabs a:nth-child(2).is-active .sui-tab-icon  {
   background-image: url("../../assets/images/icons/star/star-orange.svg");
 }
 
-.sui-tabs a:nth-child(3):hover .sui-tab-icon {
+.sui-tabs a:nth-child(3):hover .sui-tab-icon,
+.sui-tabs a:nth-child(3).is-active .sui-tab-icon  {
   background-image: url("../../assets/images/icons/calendar/calendar-orange.svg");
 }
 
-.sui-tabs a:nth-child(4):hover .sui-tab-icon {
+.sui-tabs a:nth-child(4):hover .sui-tab-icon,
+.sui-tabs a:nth-child(4).is-active .sui-tab-icon  {
   background-image: url("../../assets/images/icons/check/check-orange.svg");
+}
+
+/* Lime */
+.tab-lime .sui-tabs a:nth-child(1):hover .sui-tab-icon,
+.tab-lime .sui-tabs a:nth-child(1).is-active .sui-tab-icon {
+  background-image: url("../../assets/images/icons/profile/profile-lime.svg");
+}
+
+.tab-lime .sui-tabs a:nth-child(2):hover .sui-tab-icon,
+.tab-lime .sui-tabs a:nth-child(2).is-active .sui-tab-icon  {
+  background-image: url("../../assets/images/icons/star/star-lime.svg");
+}
+
+.tab-lime .sui-tabs a:nth-child(3):hover .sui-tab-icon,
+.tab-lime .sui-tabs a:nth-child(3).is-active .sui-tab-icon  {
+  background-image: url("../../assets/images/icons/calendar/calendar-lime.svg");
+}
+
+.tab-lime .sui-tabs a:nth-child(4):hover .sui-tab-icon,
+.tab-lime .sui-tabs a:nth-child(4).is-active .sui-tab-icon  {
+  background-image: url("../../assets/images/icons/check/check-lime.svg");
+}
+
+/* Magenta */
+.tab-magenta .sui-tabs a:nth-child(1):hover .sui-tab-icon,
+.tab-magenta .sui-tabs a:nth-child(1).is-active .sui-tab-icon {
+  background-image: url("../../assets/images/icons/profile/profile-magenta.svg");
+}
+
+.tab-magenta .sui-tabs a:nth-child(2):hover .sui-tab-icon,
+.tab-magenta .sui-tabs a:nth-child(2).is-active .sui-tab-icon  {
+  background-image: url("../../assets/images/icons/star/star-magenta.svg");
+}
+
+.tab-magenta .sui-tabs a:nth-child(3):hover .sui-tab-icon,
+.tab-magenta .sui-tabs a:nth-child(3).is-active .sui-tab-icon  {
+  background-image: url("../../assets/images/icons/calendar/calendar-magenta.svg");
+}
+
+.tab-magenta .sui-tabs a:nth-child(4):hover .sui-tab-icon,
+.tab-magenta .sui-tabs a:nth-child(4).is-active .sui-tab-icon  {
+  background-image: url("../../assets/images/icons/check/check-magenta.svg");
 }
 
 @media (--desktop) {
