@@ -1,0 +1,23 @@
+.sui-icon-check {
+  background-image: url("../../assets/images/icons/check/check-default.svg");
+}
+
+.sui-icon-check.green {
+  background-image: url("../../assets/images/icons/check/check-green.svg");
+}
+
+.sui-icon-check.lime {
+  background-image: url("../../assets/images/icons/check/check-lime.svg");
+}
+
+.sui-icon-check.magenta {
+  background-image: url("../../assets/images/icons/check/check-magenta.svg");
+}
+
+.sui-icon-check.orange {
+  background-image: url("../../assets/images/icons/check/check-orange.svg");
+}
+
+.sui-icon-check.purple {
+  background-image: url("../../assets/images/icons/check/check-purple.svg");
+}

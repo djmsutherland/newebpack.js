@@ -1,7 +1,7 @@
 import "../stylesheets/index.css"
 
 // Components
-import "./components/alert";
+import "./components/sui-alert";
 import "./components/sui-switch";
 import "./components/sui-input";
 

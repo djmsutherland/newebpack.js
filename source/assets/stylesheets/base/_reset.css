@@ -15,3 +15,26 @@ body {
 img {
   width: 100%;
 }
+
+button {
+  color: var(--white);
+  font-size: var(--size-paragraph);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  width: 100%;
+  height: var(--spacing-48);
+  padding: 0;
+  background-color: transparent;
+  transition: background-color 300ms ease-in-out;
+}
+
+button:active,
+button:focus,
+button:visited {
+  outline: none;
+}

@@ -16,12 +16,13 @@
         </div>
       </header>
 
-      <alert
+      <sui-alert
         title="notification"
         description="Sensis offers a range of products and services, such as Search Engine Optimisation/Marketing, Social Media Services and Websites. To help us provide you with the most relevant information, please let us know a bit more about you."
-      ></alert>
+      ></sui-alert>
 
       <main class="sui-main">
+
         <!-- TODO move to submit button when we have design -->
         <a href="#" @click="shared.showAlert = true">
           Show alert
@@ -46,6 +47,10 @@
               </select>
               <label class="label sui-label" for="profile-role">Job role</label>
             </fieldset>
+
+            <fieldset class="sui-field">
+              <button class="orange" type="submit"><i class="sui-button-icon sui-icon-check"></i>Save</button>
+            </fieldset>
           </form>
         </section>
 
@@ -69,6 +74,9 @@
               type="checkbox"
             >
             </sui-switch>
+          </fieldset>
+          <fieldset class="sui-field">
+            <button class="lime" type="submit"><i class="sui-button-icon sui-icon-check"></i>Save</button>
           </fieldset>
         </form>
       </section>
@@ -103,6 +111,9 @@
             >
             </sui-switch>
           </fieldset>
+          <fieldset class="sui-field">
+            <button class="magenta" type="submit"><i class="sui-button-icon sui-icon-check"></i>Save</button>
+          </fieldset>
         </form>
       </section>
       </main>
@@ -111,7 +122,6 @@
         <a class="label"><i class="sui-tab-icon"></i>Profile</a>
         <a class="label"><i class="sui-tab-icon"></i>Interest</a>
         <a class="label"><i class="sui-tab-icon"></i>Frequency</a>
-        <a class="label"><i class="sui-tab-icon"></i>Save</a>
       </nav>
     </div><!-- END #sui-app -->
     <script src="sensis-ui-components.js"></script>
