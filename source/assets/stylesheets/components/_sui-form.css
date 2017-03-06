@@ -2,6 +2,7 @@
 
 .sui-form-container {
   align-self: center;
+  margin-bottom: var(--spacing-48);
   width: 100%;
   max-width: 30rem;
 }

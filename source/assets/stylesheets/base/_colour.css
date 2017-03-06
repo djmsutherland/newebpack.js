@@ -3,6 +3,8 @@
 /* Primary colours */
 .colour-black { color: var(--black) }
 .colour-white { color: var(--white) }
+.background-colour-black { background-color: var(--black) }
+.background-colour-white { background-color: var(--white) }
 
 /* Greyscale colours */
 .colour-grey-darkest { color: var(--grey-darkest) }
@@ -11,6 +13,12 @@
 .colour-grey-light { color: var(--grey-light) }
 .colour-grey-lighter { color: var(--grey-lighter) }
 .colour-grey-lightest { color: var(--grey-lightest) }
+.background-colour-grey-darkest { background-color: var(--grey-darkest) }
+.background-colour-grey-darker { background-color: var(--grey-darker) }
+.background-colour-grey-dark { background-color: var(--grey-dark) }
+.background-colour-grey-light { background-color: var(--grey-light) }
+.background-colour-grey-lighter { background-color: var(--grey-lighter) }
+.background-colour-grey-lightest { background-color: var(--grey-lightest) }
 
 /* Secondary colours */
 .colour-green { color: var(--green-default) }
@@ -18,27 +26,52 @@
 .colour-green-dark { color: var(--green-dark) }
 .colour-green-darker { color: var(--green-darker) }
 .colour-green-darkest { color: var(--green-darkest) }
+.background-colour-green { background-color: var(--green-default) }
+.background-colour-green-light { background-color: var(--green-light) }
+.background-colour-green-dark { background-color: var(--green-dark) }
+.background-colour-green-darker { background-color: var(--green-darker) }
+.background-colour-green-darkest { background-color: var(--green-darkest) }
 
 .colour-lime { color: var(--lime-default) }
 .colour-lime-light { color: var(--lime-light) }
 .colour-lime-dark { color: var(--lime-dark) }
 .colour-lime-darker { color: var(--lime-darker) }
 .colour-lime-darkest { color: var(--lime-darkest) }
+.background-colour-lime { background-color: var(--lime-default) }
+.background-colour-lime-light { background-color: var(--lime-light) }
+.background-colour-lime-dark { background-color: var(--lime-dark) }
+.background-colour-lime-darker { background-color: var(--lime-darker) }
+.background-colour-lime-darkest { background-color: var(--lime-darkest) }
 
 .colour-magenta { color: var(--magenta-default) }
 .colour-magenta-light { color: var(--magenta-light) }
 .colour-magenta-dark { color: var(--magenta-dark) }
 .colour-magenta-darker { color: var(--magenta-darker) }
 .colour-magenta-darkest { color: var(--magenta-darkest) }
+.background-colour-magenta { background-color: var(--magenta-default) }
+.background-colour-magenta-light { background-color: var(--magenta-light) }
+.background-colour-magenta-dark { background-color: var(--magenta-dark) }
+.background-colour-magenta-darker { background-color: var(--magenta-darker) }
+.background-colour-magenta-darkest { background-color: var(--magenta-darkest) }
 
 .colour-orange { color: var(--orange-default) }
 .colour-orange-light { color: var(--orange-light) }
 .colour-orange-dark { color: var(--orange-dark) }
 .colour-orange-darker { color: var(--orange-darker) }
 .colour-orange-darkest { color: var(--orange-darkest) }
+.background-colour-orange { background-color: var(--orange-default) }
+.background-colour-orange-light { background-color: var(--orange-light) }
+.background-colour-orange-dark { background-color: var(--orange-dark) }
+.background-colour-orange-darker { background-color: var(--orange-darker) }
+.background-colour-orange-darkest { background-color: var(--orange-darkest) }
 
 .colour-purple { color: var(--purple-default) }
 .colour-purple-light { color: var(--purple-light) }
 .colour-purple-dark { color: var(--purple-dark) }
 .colour-purple-darker { color: var(--purple-darker) }
 .colour-purple-darkest { color: var(--purple-darkest) }
+.background-colour-purple { background-color: var(--purple-default) }
+.background-colour-purple-light { background-color: var(--purple-light) }
+.background-colour-purple-dark { background-color: var(--purple-dark) }
+.background-colour-purple-darker { background-color: var(--purple-darker) }
+.background-colour-purple-darkest { background-color: var(--purple-darkest) }
