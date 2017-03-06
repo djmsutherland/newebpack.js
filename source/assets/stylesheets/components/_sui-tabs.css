@@ -70,6 +70,7 @@
 @media (--desktop) {
   .sui-tabs-container {
     flex-direction: column-reverse;
+    height: auto;
   }
 
   .sui-tabs {
