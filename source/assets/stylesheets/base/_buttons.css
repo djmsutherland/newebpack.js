@@ -1,49 +1,90 @@
 @import "../variables";
 
+.tab-green button {
+  background-color: var(--green-default)
+}
+
+.tab-lime button {
+  background-color: var(--lime-default)
+  color: var(--black);
+}
+
+.tab-orange button {
+  background-color: var(--orange-default)
+}
+
+.tab-magenta button {
+  background-color: var(--magenta-default)
+}
+
+.tab-purple button {
+  background-color: var(--purple-default)
+}
+
+.tab-green button:hover,
 button.background-colour-green:hover {
   background-color: var(--green-light)
 }
 
+.tab-green button:active,
+.tab-green button:focus,
+.tab-green button:visited,
 button.background-colour-green:active,
 button.background-colour-green:focus,
 button.background-colour-green:visited {
   background-color: var(--green-dark)
 }
 
+.tab-lime button:hover,
 button.background-colour-lime:hover {
   background-color: var(--lime-light)
 }
 
+.tab-lime button:active,
+.tab-lime button:focus,
+.tab-lime button:visited,
 button.background-colour-lime:active,
 button.background-colour-lime:focus,
 button.background-colour-lime:visited {
   background-color: var(--lime-dark)
 }
 
+.tab-magenta button:hover,
 button.background-colour-magenta:hover {
   background-color: var(--magenta-light)
 }
 
+.tab-magenta button:active,
+.tab-magenta button:focus,
+.tab-magenta button:visited,
 button.background-colour-magenta:active,
 button.background-colour-magenta:focus,
 button.background-colour-magenta:visited {
   background-color: var(--magenta-dark)
 }
 
+.tab-orange button:hover,
 button.background-colour-orange:hover {
   background-color: var(--orange-light)
 }
 
+.tab-orange button:active,
+.tab-orange button:focus,
+.tab-orange button:visited,
 button.background-colour-orange:active,
 button.background-colour-orange:focus,
 button.background-colour-orange:visited {
   background-color: var(--orange-dark)
 }
 
+.tab-purple button:hover,
 button.background-colour-purple:hover {
   background-color: var(--purple-light)
 }
 
+.tab-purple button:active,
+.tab-purple button:focus,
+.tab-purple button:visited,
 button.background-colour-purple:active,
 button.background-colour-purple:focus,
 button.background-colour-purple:visited {

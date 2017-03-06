@@ -4,6 +4,7 @@ import "../stylesheets/index.css"
 import "./components/sui-alert";
 import "./components/sui-input";
 import "./components/sui-select";
+import "./components/sui-submit-button";
 import "./components/sui-switch";
 import "./components/sui-tab";
 import "./components/sui-tabs";
