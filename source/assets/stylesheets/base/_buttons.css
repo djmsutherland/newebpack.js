@@ -15,6 +15,7 @@ button.green:visited {
 }
 
 button.lime {
+  color: var(--black);
   background-color: var(--lime-default)
 }
 

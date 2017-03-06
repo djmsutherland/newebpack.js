@@ -17,11 +17,14 @@ img {
 }
 
 button {
+  cursor: pointer;
   color: var(--white);
+  font-family: inherit;
+  font-weight: 700;
   font-size: var(--size-paragraph);
   text-transform: uppercase;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   margin: 0;
   border: 1px solid var(--black);
