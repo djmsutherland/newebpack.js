@@ -1,0 +1,16 @@
+<div class="sui-tabs-container">
+  <section class="sui-tab-content sui-form-container">
+    <slot></slot>
+  </section>
+  <nav class="sui-footer sui-tabs">
+    <a
+      v-for="tab in tabs"
+      :href="tab.href"
+      @click="selectTab(tab)"
+      class="label"
+      :class="{ 'is-active': tab.isActive }"
+    >
+      <i class="sui-tab-icon"></i>{{ tab.name }}
+    </a>
+  </nav>
+</div>
