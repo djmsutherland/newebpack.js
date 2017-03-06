@@ -28,99 +28,104 @@
           Show alert
         </a>
 
-        <section class="sui-form-container">
-          <header class="sui-title-group">
-            <h1 class="title">Profile</h1>
-            <p class="paragraph-1">Your profile details are used to do the thing</p>
-          </header>
+        <sui-tabs>
+          <sui-tab name="Profile" selected="true">
 
-          <form class="sui-form" action="index.html" method="post">
+            <header class="sui-title-group">
+              <h1 class="title">Profile</h1>
+              <p class="paragraph-1">Your profile details are used to do the thing</p>
+            </header>
 
-            <sui-input type="email" title="Email address"></sui-input>
+            <form class="sui-form" action="index.html" method="post">
 
-            <sui-input type="text" title="First name"></sui-input>
+              <sui-input type="email" title="Email address"></sui-input>
 
-            <sui-select
-              title="Job role"
-              :options="['Marketing manager', 'Developer', 'Designer']"
-            ></sui-select>
+              <sui-input type="text" title="First name"></sui-input>
 
-            <fieldset class="sui-field">
-              <button class="orange" type="submit"><i class="sui-button-icon sui-icon-check"></i>Save</button>
-            </fieldset>
+              <sui-select
+                title="Job role"
+                :options="['Marketing manager', 'Developer', 'Designer']"
+              ></sui-select>
 
-          </form>
-        </section>
+              <fieldset class="sui-field">
+                <button class="orange" type="submit"><i class="sui-button-icon sui-icon-check"></i>Save</button>
+              </fieldset>
 
-      <section class="sui-form-container">
-        <header class="sui-title-group">
-          <h1 class="title">Interests</h1>
-          <p class="paragraph-1">Your interests are used to do the thing.</p>
-        </header>
+            </form>
 
-        <form class="sui-form" action="index.html" method="post">
-          <fieldset class="sui-field sui-field-group">
-            <sui-switch
-              title="newsletters"
-              description="Newsletters and articles"
-              type="checkbox"
-            >
-            </sui-switch>
-            <sui-switch
-              title="products"
-              description="Product offers and updates"
-              type="checkbox"
-            >
-            </sui-switch>
-          </fieldset>
-          <fieldset class="sui-field">
-            <button class="lime" type="submit"><i class="sui-button-icon sui-icon-check"></i>Save</button>
-          </fieldset>
-        </form>
-      </section>
+          </sui-tab>
 
-      <section class="sui-form-container">
-        <header class="sui-title-group">
-          <h1 class="title">Frequency</h1>
-          <p class="paragraph-1">Setting your frequency will do the thing.</p>
-        </header>
+          <sui-tab name="Interests">
 
-        <form class="sui-form" action="index.html" method="post">
-          <fieldset class="sui-field sui-field-group">
-            <sui-switch
-              title="fortnightly"
-              description="Fortnightly"
-              type="radio"
-              group="radioTest"
-            >
-            </sui-switch>
-            <sui-switch
-              title="monthly"
-              description="Monthly"
-              type="radio"
-              group="radioTest"
-            >
-            </sui-switch>
-            <sui-switch
-              title="never"
-              description="Never"
-              type="radio"
-              group="radioTest"
-            >
-            </sui-switch>
-          </fieldset>
-          <fieldset class="sui-field">
-            <button class="magenta" type="submit"><i class="sui-button-icon sui-icon-check"></i>Save</button>
-          </fieldset>
-        </form>
-      </section>
+            <header class="sui-title-group">
+              <h1 class="title">Interests</h1>
+              <p class="paragraph-1">Your interests are used to do the thing.</p>
+            </header>
+
+            <form class="sui-form" action="index.html" method="post">
+              <fieldset class="sui-field sui-field-group">
+                <sui-switch
+                  title="newsletters"
+                  description="Newsletters and articles"
+                  type="checkbox"
+                >
+                </sui-switch>
+                <sui-switch
+                  title="products"
+                  description="Product offers and updates"
+                  type="checkbox"
+                >
+                </sui-switch>
+              </fieldset>
+              <fieldset class="sui-field">
+                <button class="lime" type="submit"><i class="sui-button-icon sui-icon-check"></i>Save</button>
+              </fieldset>
+            </form>
+
+          </sui-tab>
+
+          <sui-tab name="Frequency">
+
+            <header class="sui-title-group">
+              <h1 class="title">Frequency</h1>
+              <p class="paragraph-1">Setting your frequency will do the thing.</p>
+            </header>
+
+            <form class="sui-form" action="index.html" method="post">
+              <fieldset class="sui-field sui-field-group">
+                <sui-switch
+                  title="fortnightly"
+                  description="Fortnightly"
+                  type="radio"
+                  group="radioTest"
+                >
+                </sui-switch>
+                <sui-switch
+                  title="monthly"
+                  description="Monthly"
+                  type="radio"
+                  group="radioTest"
+                >
+                </sui-switch>
+                <sui-switch
+                  title="never"
+                  description="Never"
+                  type="radio"
+                  group="radioTest"
+                >
+                </sui-switch>
+              </fieldset>
+              <fieldset class="sui-field">
+                <button class="magenta" type="submit"><i class="sui-button-icon sui-icon-check"></i>Save</button>
+              </fieldset>
+            </form>
+
+          </sui-tab>
+
+        </sui-tabs>
+
       </main>
 
-      <nav class="sui-footer sui-tabs">
-        <a class="label"><i class="sui-tab-icon"></i>Profile</a>
-        <a class="label"><i class="sui-tab-icon"></i>Interest</a>
-        <a class="label"><i class="sui-tab-icon"></i>Frequency</a>
-      </nav>
     </div><!-- END #sui-app -->
     <script src="sensis-ui-components.js"></script>
   </body>

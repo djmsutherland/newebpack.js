@@ -1,5 +1,15 @@
 @import "../variables";
 
+.sui-tabs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sui-tab-content {
+
+}
+
 .sui-tabs {
   display: flex;
   margin-top: auto;
@@ -61,8 +71,11 @@
 }
 
 @media (--desktop) {
+  .sui-tabs-container {
+    flex-direction: column-reverse;
+  }
+
   .sui-tabs {
-    order: 2;
     align-self: center;
     margin-top: var(--spacing-32);
     border: 1px solid black;
