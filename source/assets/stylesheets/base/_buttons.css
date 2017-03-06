@@ -5,7 +5,7 @@
 }
 
 .tab-lime button {
-  background-color: var(--lime-default)
+  background-color: var(--lime-default);
   color: var(--black);
 }
 
