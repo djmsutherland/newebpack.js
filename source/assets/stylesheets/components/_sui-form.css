@@ -36,7 +36,6 @@
 .sui-select {
   appearance: none;
   background-image: url("../../assets/images/icons/arrows/default/arrow-down.svg");
-  background-size: 5%;
   background-repeat: no-repeat;
   background-position: calc(100% - var(--spacing-16)) center;
 }

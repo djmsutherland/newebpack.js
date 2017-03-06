@@ -8,6 +8,7 @@
   </head>
   <body>
     <div id="sui-app" class="sui-body">
+
       <!-- To be converted to HTML components -->
       <header class="sui-header">
         <div class="sui-header-logo">
@@ -16,13 +17,9 @@
         </div>
       </header>
 
-      <sui-alert
-        title="notification"
-        description="Sensis offers a range of products and services, such as Search Engine Optimisation/Marketing, Social Media Services and Websites. To help us provide you with the most relevant information, please let us know a bit more about you."
-      ></sui-alert>
+      <sui-alert title="notification" description="Sensis offers a range of products and services, such as Search Engine Optimisation/Marketing, Social Media Services and Websites. To help us provide you with the most relevant information, please let us know a bit more about you."></sui-alert>
 
       <main class="sui-main">
-
         <!-- TODO move to submit button when we have design -->
         <a href="#" @click="shared.showAlert = true">
           Show alert
@@ -30,94 +27,51 @@
 
         <sui-tabs>
           <sui-tab name="Profile" selected="true" colour="orange">
-
             <header class="sui-title-group">
               <h1 class="title">Profile</h1>
               <p class="paragraph-1">Your profile details are used to do the thing</p>
             </header>
-
             <form class="sui-form" action="index.html" method="post">
-
               <sui-input type="email" title="Email address"></sui-input>
-
-              <sui-input type="text" title="First name"></sui-input>
-
-              <sui-select
-                title="Job role"
-                :options="['Marketing manager', 'Developer', 'Designer']"
-              ></sui-select>
-
+              <sui-select title="Job role" :options="['', 'Owner', 'Marketing manager', 'Manager', 'Support']"></sui-select>
+              <sui-select title="Marketing knowledge" :options="['', 'Biginner', 'Intermediate', 'Advanced']"></sui-select>
+              <sui-select title="Age of business" :options="['', 'Less than 1 year', '1 - 2 years', '3 - 5 years', '6+ years']"></sui-select>
+              <sui-select title="12 month business goal" :options="['', 'Start my business', 'Grow my business', 'Stay at the same level', 'Winding down my business']"></sui-select>
               <sui-submit-button title="Save"></sui-submit-button>
-
             </form>
-
           </sui-tab>
 
           <sui-tab name="Interests" colour="lime">
-
             <header class="sui-title-group">
               <h1 class="title">Interests</h1>
               <p class="paragraph-1">Your interests are used to do the thing.</p>
             </header>
-
             <form class="sui-form" action="index.html" method="post">
               <fieldset class="sui-field sui-field-group">
-                <sui-switch
-                  title="newsletters"
-                  description="Newsletters and articles"
-                  type="checkbox"
-                >
-                </sui-switch>
-                <sui-switch
-                  title="products"
-                  description="Product offers and updates"
-                  type="checkbox"
-                >
-                </sui-switch>
+                <sui-switch title="newsletters" description="Newsletters and articles" type="checkbox"></sui-switch>
+                <sui-switch title="products" description="Product offers and updates" type="checkbox"></sui-switch>
+                <sui-switch title="events" description="Free event invitations" type="checkbox"></sui-switch>
+                <sui-switch title="insights" description="Insights and benchmarks" type="checkbox"></sui-switch>
               </fieldset>
               <sui-submit-button title="Save"></sui-submit-button>
             </form>
-
           </sui-tab>
 
           <sui-tab name="Frequency" colour="magenta">
-
             <header class="sui-title-group">
               <h1 class="title">Frequency</h1>
               <p class="paragraph-1">Setting your frequency will do the thing.</p>
             </header>
-
             <form class="sui-form" action="index.html" method="post">
               <fieldset class="sui-field sui-field-group">
-                <sui-switch
-                  title="fortnightly"
-                  description="Fortnightly"
-                  type="radio"
-                  group="radioTest"
-                >
-                </sui-switch>
-                <sui-switch
-                  title="monthly"
-                  description="Monthly"
-                  type="radio"
-                  group="radioTest"
-                >
-                </sui-switch>
-                <sui-switch
-                  title="never"
-                  description="Never"
-                  type="radio"
-                  group="radioTest"
-                >
-                </sui-switch>
+                <sui-switch title="fortnightly" description="Fortnightly" type="radio" group="radioTest"></sui-switch>
+                <sui-switch title="monthly" description="Monthly" type="radio" group="radioTest"></sui-switch>
+                <sui-switch title="never" description="Never" type="radio" group="radioTest"></sui-switch>
               </fieldset>
               <sui-submit-button title="Save"></sui-submit-button>
             </form>
-
           </sui-tab>
-
         </sui-tabs>
-
       </main>
 
     </div><!-- END #sui-app -->
