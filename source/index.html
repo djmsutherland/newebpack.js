@@ -38,13 +38,11 @@
 
             <sui-input type="text" title="First name"></sui-input>
 
-            <fieldset class="sui-field">
-              <select id="profile-role" class="sui-select">
-                <option selected value=""></option>
-                <option class="sui-option" value="dentist">Dentist</option>
-              </select>
-              <label class="label sui-label" for="profile-role">Job role</label>
-            </fieldset>
+            <sui-select
+              title="Job role"
+              :options="['Marketing manager', 'Developer', 'Designer']"
+            ></sui-select>
+            
           </form>
         </section>
 
