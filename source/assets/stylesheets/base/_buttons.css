@@ -1,0 +1,72 @@
+@import "../variables";
+
+button.green {
+  background-color: var(--green-default)
+}
+
+button.green:hover {
+  background-color: var(--green-light)
+}
+
+button.green:active,
+button.green:focus,
+button.green:visited {
+  background-color: var(--green-dark)
+}
+
+button.lime {
+  color: var(--black);
+  background-color: var(--lime-default)
+}
+
+button.lime:hover {
+  background-color: var(--lime-light)
+}
+
+button.lime:active,
+button.lime:focus,
+button.lime:visited {
+  background-color: var(--lime-dark)
+}
+
+button.magenta {
+  background-color: var(--magenta-default)
+}
+
+button.magenta:hover {
+  background-color: var(--magenta-light)
+}
+
+button.magenta:active,
+button.magenta:focus,
+button.magenta:visited {
+  background-color: var(--magenta-dark)
+}
+
+button.orange {
+  background-color: var(--orange-default)
+}
+
+button.orange:hover {
+  background-color: var(--orange-light)
+}
+
+button.orange:active,
+button.orange:focus,
+button.orange:visited {
+  background-color: var(--orange-dark)
+}
+
+button.purple {
+  background-color: var(--purple-default)
+}
+
+button.purple:hover {
+  background-color: var(--purple-light)
+}
+
+button.purple:active,
+button.purple:focus,
+button.purple:visited {
+  background-color: var(--purple-dark)
+}

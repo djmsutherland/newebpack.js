@@ -28,9 +28,11 @@
           Show alert
         </a>
 
-        <section class="sui-title-group sui-form-container">
-          <h1 class="title">Profile</h1>
-          <p class="paragraph-1">Your profile details are used to do the thing</p>
+        <section class="sui-form-container">
+          <header class="sui-title-group">
+            <h1 class="title">Profile</h1>
+            <p class="paragraph-1">Your profile details are used to do the thing</p>
+          </header>
 
           <form class="sui-form" action="index.html" method="post">
 
@@ -42,15 +44,19 @@
               title="Job role"
               :options="['Marketing manager', 'Developer', 'Designer']"
             ></sui-select>
-            
+
+            <fieldset class="sui-field">
+              <button class="orange" type="submit"><i class="sui-button-icon sui-icon-check"></i>Save</button>
+            </fieldset>
+
           </form>
         </section>
 
-
-
-      <section class="sui-title-group sui-form-container">
-        <h1 class="title">Interests</h1>
-        <p class="paragraph-1">Your interests are used to do the thing.</p>
+      <section class="sui-form-container">
+        <header class="sui-title-group">
+          <h1 class="title">Interests</h1>
+          <p class="paragraph-1">Your interests are used to do the thing.</p>
+        </header>
 
         <form class="sui-form" action="index.html" method="post">
           <fieldset class="sui-field sui-field-group">
@@ -67,14 +73,17 @@
             >
             </sui-switch>
           </fieldset>
+          <fieldset class="sui-field">
+            <button class="lime" type="submit"><i class="sui-button-icon sui-icon-check"></i>Save</button>
+          </fieldset>
         </form>
       </section>
 
-
-
-      <section class="sui-title-group sui-form-container">
-        <h1 class="title">Frequency</h1>
-        <p class="paragraph-1">Setting your frequency will do the thing.</p>
+      <section class="sui-form-container">
+        <header class="sui-title-group">
+          <h1 class="title">Frequency</h1>
+          <p class="paragraph-1">Setting your frequency will do the thing.</p>
+        </header>
 
         <form class="sui-form" action="index.html" method="post">
           <fieldset class="sui-field sui-field-group">
@@ -100,6 +109,9 @@
             >
             </sui-switch>
           </fieldset>
+          <fieldset class="sui-field">
+            <button class="magenta" type="submit"><i class="sui-button-icon sui-icon-check"></i>Save</button>
+          </fieldset>
         </form>
       </section>
       </main>
@@ -108,7 +120,6 @@
         <a class="label"><i class="sui-tab-icon"></i>Profile</a>
         <a class="label"><i class="sui-tab-icon"></i>Interest</a>
         <a class="label"><i class="sui-tab-icon"></i>Frequency</a>
-        <a class="label"><i class="sui-tab-icon"></i>Save</a>
       </nav>
     </div><!-- END #sui-app -->
     <script src="sensis-ui-components.js"></script>
