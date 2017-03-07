@@ -7,7 +7,7 @@
     <title>Sensis</title>
   </head>
   <body>
-    <div id="sui-app" class="sui-body">
+    <div id="sui-application" class="sui-body">
 
       <!-- To be converted to HTML components -->
       <header class="sui-header">
@@ -17,21 +17,44 @@
         </div>
       </header>
 
-      <sui-alert title="notification" description="Sensis offers a range of products and services, such as Search Engine Optimisation/Marketing, Social Media Services and Websites. To help us provide you with the most relevant information, please let us know a bit more about you."></sui-alert>
+      <!--
+      * Alert functionality
+      * ===================
+      *
+      * When the user submits any of their preferences, we want to display
+      * a specific message so they know their preferences have been updated.
+      *
+      * The initial message has been taken from the existing preferences and
+      * is dynamically generated based on what we know in the database.
+      *
+      * Other messages to be displayed:
+      *
+      * 1. Great!
+      * Thanks for letting us know. Your %tab% has been updated.
+      *
+      * 2. Uh oh!
+      * There was an error preventing us from saving your preferences.
+      * Please fix these errors before saving.
+      *
+      * Unsubscribe messages
+      * ====================
+      *
+      * 3. Was it something we said?
+      * Thanks for letting us know. Your frequency has been updated.
+      *
+      * 4. Sorry to see you go!
+      * You have been unsubscribed from all our marketing communications.
+      -->
+      <sui-alert title="Notification" description="Sensis offers a range of products and services, such as Search Engine Optimisation/Marketing, Social Media Services and Websites. To help us provide you with the most relevant information, please let us know a bit more about you."></sui-alert>
 
       <main class="sui-main">
-        <!-- TODO move to submit button when we have design -->
-        <a href="#" @click="shared.showAlert = true">
-          Show alert
-        </a>
-
         <sui-tabs>
           <sui-tab name="Profile" selected="true" colour="orange">
             <header class="sui-title-group">
               <h1 class="title">Profile</h1>
               <p class="paragraph-1">Your profile details are used to do the thing</p>
             </header>
-            <form class="sui-form" action="index.html" method="post">
+            <form class="sui-form" v-on:submit.prevent="show.alert = true">
               <sui-input type="email" title="Email address"></sui-input>
               <sui-select title="Job role" :options="['', 'Owner', 'Marketing manager', 'Manager', 'Support']"></sui-select>
               <sui-select title="Marketing knowledge" :options="['', 'Biginner', 'Intermediate', 'Advanced']"></sui-select>
@@ -46,7 +69,7 @@
               <h1 class="title">Interests</h1>
               <p class="paragraph-1">Your interests are used to do the thing.</p>
             </header>
-            <form class="sui-form" action="index.html" method="post">
+            <form class="sui-form" v-on:submit.prevent="show.alert = true">
               <fieldset class="sui-field sui-field-group">
                 <sui-switch title="newsletters" description="Newsletters and articles" type="checkbox"></sui-switch>
                 <sui-switch title="products" description="Product offers and updates" type="checkbox"></sui-switch>
@@ -62,11 +85,15 @@
               <h1 class="title">Frequency</h1>
               <p class="paragraph-1">Setting your frequency will do the thing.</p>
             </header>
-            <form class="sui-form" action="index.html" method="post">
+            <form class="sui-form" v-on:submit.prevent="show.alert = true">
               <fieldset class="sui-field sui-field-group">
-                <sui-switch title="fortnightly" description="Fortnightly" type="radio" group="radioTest"></sui-switch>
-                <sui-switch title="monthly" description="Monthly" type="radio" group="radioTest"></sui-switch>
-                <sui-switch title="never" description="Never" type="radio" group="radioTest"></sui-switch>
+                <sui-switch title="fortnightly" description="Fortnightly" type="radio" group="frequency"></sui-switch>
+                <sui-switch title="monthly" description="Monthly" type="radio" group="frequency"></sui-switch>
+                <sui-switch title="never" description="Never" type="radio" group="frequency"></sui-switch>
+              </fieldset>
+              <fieldset class="sui-field sui-field-group" v-show="show.unsubscribe">
+                <sui-switch title="break" description="Take a break for 90 days" type="radio" group="unsubscribe"></sui-switch>
+                <sui-switch title="unsubscribe" description="Unsubscribe from all" type="radio" group="unsubscribe"></sui-switch>
               </fieldset>
               <sui-submit-button title="Save"></sui-submit-button>
             </form>

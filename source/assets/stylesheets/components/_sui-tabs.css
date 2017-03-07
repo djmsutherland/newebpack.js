@@ -9,6 +9,7 @@
 
 .sui-tabs {
   display: flex;
+  flex: 0 0 auto;
   margin-top: auto;
   justify-content: space-between;
   border-top: 1px solid var(--black);
@@ -124,7 +125,7 @@
 
   .sui-tabs {
     align-self: center;
-    margin-top: var(--spacing-32);
+    margin-top: var(--spacing-48);
     border: 1px solid black;
     border-radius: var(--spacing-8);
     width: 100%;

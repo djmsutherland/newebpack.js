@@ -1,5 +1,6 @@
-const Store = {
-  showAlert: false
-};
-
-export default Store;
+export default {
+  show: {
+    alert: false,
+    unsubscribe: false
+  }
+}

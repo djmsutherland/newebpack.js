@@ -1,4 +1,7 @@
+@import "../variables";
+
 .sui-title-group {
   box-sizing: border-box;
+  margin-top: var(--spacing-32);
   padding: var(--spacing-16);
 }
