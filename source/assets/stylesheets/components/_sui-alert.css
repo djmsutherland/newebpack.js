@@ -18,4 +18,6 @@
   right: var(--spacing-16);
   width: var(--spacing-16);
   height: var(--spacing-16);
+  background-image: url("../../assets/images/icons/cross/close-default.svg");
+  background-repeat: no-repeat;
 }

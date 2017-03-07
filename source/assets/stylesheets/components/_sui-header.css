@@ -16,6 +16,9 @@
   width: var(--spacing-48);
   height: var(--spacing-48);
   background-color: var(--grey-lightest);
+  background-image: url("../../assets/images/logos/logo-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .sui-header-logo img:last-child {
@@ -28,6 +31,8 @@
     width: 8rem;
     height: 4rem;
     background-color: var(--white);
+    background-image: url("../../assets/images/logos/logo-horizontal.svg");
+    background-size: 80%;
   }
 
   .sui-header-logo img:first-child {
