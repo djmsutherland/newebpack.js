@@ -14,7 +14,4 @@ import Vue from "vue"
 import store from "./services/store"
 
 // Vue initialisation
-new Vue({
-  el: "#sui-application",
-  data: store
-})
+new Vue({ el: "#sui-application", data: store }) // eslint-disable-line no-new

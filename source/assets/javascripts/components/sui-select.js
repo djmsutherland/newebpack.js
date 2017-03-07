@@ -1,20 +1,17 @@
-import Vue from "vue";
+import Vue from "vue"
+import template from "../../../partials/sui-select.html"
 
 export default Vue.component("sui-select", {
-
-  template: require("../../../partials/sui-select.html"),
-
+  template,
   props: ["title", "options"],
-
-  data: function() {
+  data() {
     return {
       selected: ""
     }
   },
-
   computed: {
     id() {
-      return `sui-${this.title.toLowerCase().replace(/ /g, "-")}`;
+      return `sui-${this.title.toLowerCase().replace(/ /g, "-")}`
     },
     optionsData() {
       return this.options.map(option => {
@@ -22,8 +19,7 @@ export default Vue.component("sui-select", {
           text: option,
           value: option.toLowerCase().replace(/ /g, "-")
         }
-      });
+      })
     }
   }
-
 })

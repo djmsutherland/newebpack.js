@@ -1,8 +1,9 @@
 import Vue from "vue"
 import store from "../services/store"
+import template from "../../../partials/sui-switch.html"
 
 export default Vue.component("sui-switch", {
-  template: require("../../../partials/sui-switch.html"),
+  template,
   props: ["title", "description", "type", "group"],
   computed: {
     id() {

@@ -1,8 +1,9 @@
 import Vue from "vue"
 import store from "../services/store"
+import template from "../../../partials/sui-alert.html"
 
 export default Vue.component("sui-alert", {
-  template: require("../../../partials/sui-alert.html"),
+  template,
   data() {
     return store
   },

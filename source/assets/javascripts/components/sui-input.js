@@ -1,21 +1,17 @@
-import Vue from "vue";
+import Vue from "vue"
+import template from "../../../partials/sui-input.html"
 
 export default Vue.component("sui-input", {
-
-  template: require("../../../partials/sui-input.html"),
-
+  template,
   props: ["title", "type"],
-
-  data: function() {
+  data() {
     return {
       message: ""
     }
   },
-
   computed: {
     id() {
-      return `sui-${this.title.toLowerCase().replace(/ /g, "-")}`;
+      return `sui-${this.title.toLowerCase().replace(/ /g, "-")}`
     }
   }
-
 })
