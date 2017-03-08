@@ -1,0 +1,17 @@
+<!--
+  *
+  * How to:
+  *
+  * <sensis-input label="" type=""></sensis-input>
+  *
+  * @label: String
+  * @type: String 'text', 'email', 'number'
+  *
+-->
+
+<fieldset class="sensis-field">
+  <input class="sensis-input" type="text" v-if="type === 'text'" v-model="value" :id="id">
+  <input class="sensis-input" type="email" v-if="type === 'email'" v-model="value" :id="id">
+  <input class="sensis-input" type="number" v-if="type === 'number'" v-model="value" :id="id">
+  <label class="sensis-label label" :class="{ active: value }" :for="id">{{ label }}</label>
+</fieldset>

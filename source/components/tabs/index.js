@@ -1,16 +1,17 @@
-import Vue from "vue"
-import template from "../../../partials/sui-tabs.html"
+import "./component.css"
 
-export default Vue.component("sui-tabs", {
-  template,
+import Vue from "vue"
+import template from "./component.html"
+
+const SensisTabs = Vue.component("sensis-tabs", {
+  created() {
+    this.tabs = this.$children
+  },
   data() {
     return {
       colourClass: "",
       tabs: []
     }
-  },
-  created() {
-    this.tabs = this.$children
   },
   mounted() {
     this.setInitialColour()
@@ -27,5 +28,8 @@ export default Vue.component("sui-tabs", {
 
       this.colourClass = `tab-${active.$options.propsData.colour}`
     }
-  }
+  },
+  template
 })
+
+export default SensisTabs

@@ -1,0 +1,19 @@
+<!--
+  *
+  * How to:
+  *
+  * <sensis-flash title="" message=""></sensis-flash>
+  *
+  * Trigger the flash by toggling the application store.show.flash
+  *
+-->
+
+<transition name="slide-fade">
+  <div v-if="show.flash" class="sensis-flash">
+    <div class="sensis-flash-inner">
+      <span class="sensis-flash-x" v-on:click="remove"></span>
+      <p class="paragraph-2">{{ title }}</p>
+      <p class="paragraph-1">{{ message }}</p>
+    </div>
+  </div>
+</transition>

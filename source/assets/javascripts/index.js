@@ -1,17 +1,22 @@
 import "../stylesheets/index.css"
 
 // Components
-import "./components/sui-alert"
-import "./components/sui-input"
-import "./components/sui-select"
-import "./components/sui-submit-button"
-import "./components/sui-switch"
-import "./components/sui-tab"
-import "./components/sui-tabs"
+import "../../components/button"
+import "../../components/flash"
+import "../../components/input"
+import "../../components/select"
+import "../../components/switch"
+import "../../components/tab"
+import "../../components/tabs"
 
 import Vue from "vue"
-
 import store from "./services/store"
 
-// Vue initialisation
-new Vue({ el: "#sui-application", data: store }) // eslint-disable-line no-new
+const application = () => {
+  return new Vue({
+    el: "#sensis-application",
+    data: store
+  })
+}
+
+application()

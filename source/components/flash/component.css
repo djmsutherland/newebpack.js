@@ -1,17 +1,19 @@
-@import "../variables";
+@import "../../assets/stylesheets/variables";
 
-.sui-alert {
+.sensis-flash {
+  order: 2;
   box-sizing: border-box;
   position: relative;
   color: var(--white);
   background-color: var(--grey-darkest);
 }
 
-.sui-alert-inner {
+/* Fixes transition from being jolty */
+.sensis-flash-inner {
   padding: var(--spacing-16);
 }
 
-.sui-alert-x {
+.sensis-flash-x {
   cursor: pointer;
   position: absolute;
   top: var(--spacing-16);

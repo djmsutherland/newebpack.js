@@ -1,0 +1,40 @@
+@import "../variables";
+
+.sensis-form-container {
+  align-self: center;
+  width: 100%;
+  max-width: 30rem;
+  padding-bottom: var(--spacing-48);
+  overflow: scroll;
+}
+
+.sensis-form {
+  padding: 0 var(--spacing-16);
+}
+
+.sensis-field-group {
+  height: auto;
+}
+
+.sensis-label,
+.sensis-label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -0.375rem;
+  padding-left: var(--spacing-16);
+  transition: all 150ms ease-in-out;
+}
+
+.sensis-input:focus {
+  outline: none;
+}
+
+.sensis-label.active,
+.sensis-select:focus + .sensis-label,
+.sensis-input:focus + .sensis-label {
+  font-size: 80%;
+  top: 0%;
+  margin-top: -var(--spacing-16);
+  padding-left: 0;
+}

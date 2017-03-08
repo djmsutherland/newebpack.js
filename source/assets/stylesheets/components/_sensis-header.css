@@ -1,13 +1,13 @@
 @import "../variables.css";
 
-.sui-header {
+.sensis-header {
   box-sizing: border-box;
   border-bottom: 1px solid black;
   padding: var(--spacing-16);
   background-color: var(--white);
 }
 
-.sui-header-logo {
+.sensis-header-logo {
   box-sizing: border-box;
   display: block;
   margin: 0 auto;
@@ -21,12 +21,12 @@
   background-repeat: no-repeat;
 }
 
-.sui-header-logo img:last-child {
+.sensis-header-logo img:last-child {
   display: none;
 }
 
 @media (--tablet) {
-  .sui-header-logo {
+  .sensis-header-logo {
     margin: 0 0;
     width: 8rem;
     height: 4rem;
@@ -35,11 +35,11 @@
     background-size: 80%;
   }
 
-  .sui-header-logo img:first-child {
+  .sensis-header-logo img:first-child {
     display: none;
   }
 
-  .sui-header-logo img:last-child {
+  .sensis-header-logo img:last-child {
     display: block;
   }
 }

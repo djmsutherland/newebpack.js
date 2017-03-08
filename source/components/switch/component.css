@@ -1,21 +1,18 @@
-@import "../variables";
+@import "../../assets/stylesheets/variables";
 
-.sui-switch-container {
+.sensis-switch-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.sui-field .sui-switch-container {
   padding: var(--spacing-16) 0;
   border-bottom: 1px solid var(--grey-lighter);
 }
 
-.sui-field .sui-switch-container:last-child {
+.sensis-switch-container:last-child {
   border-bottom: 0;
 }
 
-.sui-switch {
+.sensis-switch {
   height: var(--switch-height);
   position: relative;
   box-sizing: border-box;
@@ -27,13 +24,13 @@
   user-select: none;
 }
 
-.sui-switch-input {
+.sensis-switch-input {
   position: absolute;
   margin-bottom: 0;
   opacity: 0;
 }
 
-.sui-switch-paddle {
+.sensis-switch-paddle {
   position: relative;
   display: block;
   width: var(--switch-width);
@@ -47,7 +44,7 @@
   cursor: pointer;
 }
 
-.sui-switch-paddle::after {
+.sensis-switch-paddle::after {
   position: absolute;
   top: -1px;
   left: -1px;
@@ -62,46 +59,46 @@
   content: '';
 }
 
-input:checked ~ .sui-switch-paddle {
+input:checked ~ .sensis-switch-paddle {
   background: var(--orange-default);
 }
 
-.tab-lime input:checked ~ .sui-switch-paddle {
+.tab-lime input:checked ~ .sensis-switch-paddle {
   background: var(--lime-default);
 }
 
-.tab-magenta input:checked ~ .sui-switch-paddle {
+.tab-magenta input:checked ~ .sensis-switch-paddle {
   background: var(--magenta-default);
 }
 
-input:checked ~ .sui-switch-paddle::after {
+input:checked ~ .sensis-switch-paddle::after {
   left: 0.938rem;
 }
 
-[data-whatinput='mouse'] input:focus ~ .sui-switch-paddle {
+[data-whatinput='mouse'] input:focus ~ .sensis-switch-paddle {
   outline: 0;
 }
 
-.sui-switch-active,
-.sui-switch-inactive {
+.sensis-switch-active,
+.sensis-switch-inactive {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.sui-switch-active {
+.sensis-switch-active {
   left: 8%;
   display: none;
 }
 
-input:checked + label > .sui-switch-active {
+input:checked + label > .sensis-switch-active {
   display: block;
 }
 
-.sui-switch-inactive {
+.sensis-switch-inactive {
   right: 15%;
 }
 
-input:checked + label > .sui-switch-inactive {
+input:checked + label > .sensis-switch-inactive {
   display: none;
 }

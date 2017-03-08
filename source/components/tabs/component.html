@@ -1,0 +1,11 @@
+<div class="sensis-tabs-container" :class="colourClass">
+  <section class="sensis-tab-content sensis-form-container">
+    <slot></slot>
+  </section>
+  <nav class="sensis-footer sensis-tabs">
+    <a v-for="tab in tabs" :href="tab.href" @click="selectTab(tab)" class="label" :class="{ 'is-active': tab.isActive }">
+      <i class="sensis-tab-icon"></i>
+      {{ tab.name }}
+    </a>
+  </nav>
+</div>

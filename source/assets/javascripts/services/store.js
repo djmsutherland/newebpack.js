@@ -1,6 +1,8 @@
-export default {
+const store = {
   show: {
-    alert: false,
+    flash: false,
     unsubscribe: false
   }
 }
+
+export default store

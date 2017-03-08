@@ -1,0 +1,17 @@
+<!--
+  *
+  * How to:
+  *
+  * <sensis-select label="" options="[]"></sensis-select>
+  *
+  * @label: String
+  * @options: Array
+  *
+-->
+
+<fieldset>
+  <select class="sensis-select" v-model="selected" :id="id">
+    <option v-for="option in data" :value="option.value">{{ option.text }}</option>
+  </select>
+  <label class="sensis-label label" :class="{ active: selected }" :for="id">{{ label }}</label>
+</fieldset>

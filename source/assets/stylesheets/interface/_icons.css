@@ -1,0 +1,8 @@
+@import "../variables";
+
+.sensis-icon-check         { background-image: url("var(--icons-path)/check/check-default.svg") }
+.sensis-icon-check.green   { background-image: url("var(--icons-path)/check/check-green.svg") }
+.sensis-icon-check.lime    { background-image: url("var(--icons-path)/check/check-lime.svg") }
+.sensis-icon-check.magenta { background-image: url("var(--icons-path)/check/check-magenta.svg") }
+.sensis-icon-check.orange  { background-image: url("var(--icons-path)/check/check-orange.svg") }
+.sensis-icon-check.purple  { background-image: url("var(--icons-path)/check/check-purple.svg") }

@@ -1,0 +1,23 @@
+<!--
+  *
+  * How to:
+  *
+  * <sensis-switch group="" label="" type=""></sensis-switch>
+  *
+  * @group: String
+  * @label: String
+  * @type: String
+  *
+  * Group is only required if type = 'radio'
+  *
+-->
+
+<div class="sensis-switch-container">
+  <label class="label">{{ label }}</label>
+  <div class="sensis-switch">
+    <input class="sensis-switch-input" :id="id" :type="type" :name="group">
+    <label class="sensis-switch-paddle" :for="id" v-on:click="action">
+      <span class="show-for-sr">{{ label }}</span>
+    </label>
+  </div>
+</div>

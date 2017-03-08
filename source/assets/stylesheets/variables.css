@@ -1,4 +1,8 @@
 :root {
+  /* Paths */
+  --images-path: ../images;
+  --icons-path: var(--images-path)/icons;
+
   /* Logos */
   --logo-horizontal: url("../images/logos/logo-horizontal.png");
   --logo-wordmark: url("../images/logos/logo-wordmark.png");

@@ -1,0 +1,27 @@
+@import "../variables";
+
+fieldset {
+  box-sizing: border-box;
+  position: relative;
+  margin: var(--spacing-24) 0 var(--spacing-8);
+  border: 0;
+  height: var(--spacing-48);
+  padding: 0;
+}
+
+input,
+select {
+  box-sizing: border-box;
+  border: 1px solid var(--black);
+  border-radius: var(--spacing-8);
+  width: 100%;
+  height: 100%;
+  padding: 0 var(--spacing-16);
+}
+
+select {
+  appearance: none;
+  background-image: url("../../assets/images/icons/arrows/default/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - var(--spacing-16)) center;
+}

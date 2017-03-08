@@ -1,38 +1,34 @@
 @import "../variables";
 
-.sui-body {
+.sensis-body {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
-.sui-header,
-.sui-main,
-.sui-footer {
+.sensis-header,
+.sensis-main,
+.sensis-footer {
   display: flex;
 }
 
-.sui-header {
+.sensis-header {
   order: 1;
 }
 
-.sui-alert {
-  order: 2;
-}
-
-.sui-main {
+.sensis-main {
   order: 3;
 }
 
-.sui-footer {
+.sensis-footer {
   order: 4;
 }
 
-.sui-main {
+.sensis-main {
   flex-direction: column;
 }
 
-.sui-main {
+.sensis-main {
   flex: 1;
 }
 

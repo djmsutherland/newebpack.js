@@ -1,0 +1,7 @@
+@import "../../assets/stylesheets/variables";
+
+.sensis-button-icon {
+  margin-right: var(--spacing-8);
+  width: var(--spacing-16);
+  height: var(--spacing-16);
+}
