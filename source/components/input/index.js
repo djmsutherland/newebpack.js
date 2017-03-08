@@ -1,6 +1,7 @@
 import "./component.css"
 
 import Vue from "vue"
+import helpers from "../../assets/javascripts/helpers"
 import template from "./component.html"
 
 const SensisInput = Vue.component("sensis-input", {
@@ -11,7 +12,7 @@ const SensisInput = Vue.component("sensis-input", {
   },
   computed: {
     id() {
-      return `sui-${this.label.toLowerCase().replace(/ /g, "-")}`
+      return helpers.identify(this.label)
     }
   },
   props: ["label", "type"],

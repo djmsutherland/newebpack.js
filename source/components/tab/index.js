@@ -1,12 +1,13 @@
 import "./component.css"
 
 import Vue from "vue"
+import helpers from "../../assets/javascripts/helpers"
 import template from "./component.html"
 
 const SensisTab = Vue.component("sensis-tab", {
   computed: {
     href() {
-      return `#${this.name.toLowerCase().replace(/ /g, "-")}`
+      return `#${helpers.parameterise(this.name)}`
     }
   },
   data() {

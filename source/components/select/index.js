@@ -1,28 +1,21 @@
 import "./component.css"
 
 import Vue from "vue"
+import helpers from "../../assets/javascripts/helpers"
 import template from "./component.html"
-
-const id = component => {
-  return `sui-${component.label.toLowerCase().replace(/ /g, "-")}`
-}
-
-const options = component => {
-  return component.map(option => {
-    return {
-      text: option,
-      value: option.toLowerCase().replace(/ /g, "-")
-    }
-  })
-}
 
 const SensisSelect = Vue.component("sensis-select", {
   computed: {
     data() {
-      return options(this.options)
+      return this.options.map(option => {
+        return {
+          text: option,
+          value: helpers.parameterise(option)
+        }
+      })
     },
     id() {
-      return id(this)
+      return helpers.identify(this.label)
     }
   },
   data() {
