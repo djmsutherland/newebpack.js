@@ -12,6 +12,10 @@ body {
   background-color: var(--grey-lightest);
 }
 
+body::-webkit-scrollbar {
+  width: 0;
+}
+
 img {
   width: 100%;
 }

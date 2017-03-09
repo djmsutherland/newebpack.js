@@ -20,3 +20,8 @@ const application = () => {
 }
 
 application()
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("sensis-loading-screen").className = "fadeout"
+  document.getElementById("sensis-application").className += " fadein"
+})

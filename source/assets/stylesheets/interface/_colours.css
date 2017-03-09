@@ -3,6 +3,16 @@
 /* Primary colours */
 .colour-black { color: var(--black) }
 .colour-white { color: var(--white) }
+
+.fill-black { fill: var(--black) }
+.fill-white { fill: var(--white) }
+
+.stroke-black { stroke: var(--black) }
+.stroke-white { stroke: var(--white) }
+
+.border-colour-black { border-color: var(--black) }
+.border-colour-white { border-color: var(--white) }
+
 .background-colour-black { background-color: var(--black) }
 .background-colour-white { background-color: var(--white) }
 
@@ -13,6 +23,28 @@
 .colour-grey-light { color: var(--grey-light) }
 .colour-grey-lighter { color: var(--grey-lighter) }
 .colour-grey-lightest { color: var(--grey-lightest) }
+
+.fill-grey-darkest { fill: var(--grey-darkest) }
+.fill-grey-darker { fill: var(--grey-darker) }
+.fill-grey-dark { fill: var(--grey-dark) }
+.fill-grey-light { fill: var(--grey-light) }
+.fill-grey-lighter { fill: var(--grey-lighter) }
+.fill-grey-lightest { fill: var(--grey-lightest) }
+
+.stroke-grey-darkest { stroke: var(--grey-darkest) }
+.stroke-grey-darker { stroke: var(--grey-darker) }
+.stroke-grey-dark { stroke: var(--grey-dark) }
+.stroke-grey-light { stroke: var(--grey-light) }
+.stroke-grey-lighter { stroke: var(--grey-lighter) }
+.stroke-grey-lightest { stroke: var(--grey-lightest) }
+
+.border-colour-grey-darkest { border-color: var(--grey-darkest) }
+.border-colour-grey-darker { border-color: var(--grey-darker) }
+.border-colour-grey-dark { border-color: var(--grey-dark) }
+.border-colour-grey-light { border-color: var(--grey-light) }
+.border-colour-grey-lighter { border-color: var(--grey-lighter) }
+.border-colour-grey-lightest { border-color: var(--grey-lightest) }
+
 .background-colour-grey-darkest { background-color: var(--grey-darkest) }
 .background-colour-grey-darker { background-color: var(--grey-darker) }
 .background-colour-grey-dark { background-color: var(--grey-dark) }
@@ -20,56 +52,155 @@
 .background-colour-grey-lighter { background-color: var(--grey-lighter) }
 .background-colour-grey-lightest { background-color: var(--grey-lightest) }
 
-/* Secondary colours */
+/* Green secondary colours */
 .colour-green { color: var(--green-default) }
 .colour-green-light { color: var(--green-light) }
 .colour-green-dark { color: var(--green-dark) }
 .colour-green-darker { color: var(--green-darker) }
 .colour-green-darkest { color: var(--green-darkest) }
+
+.fill-green { fill: var(--green-default) }
+.fill-green-light { fill: var(--green-light) }
+.fill-green-dark { fill: var(--green-dark) }
+.fill-green-darker { fill: var(--green-darker) }
+.fill-green-darkest { fill: var(--green-darkest) }
+
+.stroke-green { stroke: var(--green-default) }
+.stroke-green-light { stroke: var(--green-light) }
+.stroke-green-dark { stroke: var(--green-dark) }
+.stroke-green-darker { stroke: var(--green-darker) }
+.stroke-green-darkest { stroke: var(--green-darkest) }
+
+.border-colour-green { border-color: var(--green-default) }
+.border-colour-green-light { border-color: var(--green-light) }
+.border-colour-green-dark { border-color: var(--green-dark) }
+.border-colour-green-darker { border-color: var(--green-darker) }
+.border-colour-green-darkest { border-color: var(--green-darkest) }
+
 .background-colour-green { background-color: var(--green-default) }
 .background-colour-green-light { background-color: var(--green-light) }
 .background-colour-green-dark { background-color: var(--green-dark) }
 .background-colour-green-darker { background-color: var(--green-darker) }
 .background-colour-green-darkest { background-color: var(--green-darkest) }
 
+/* Lime secondary colours */
 .colour-lime { color: var(--lime-default) }
 .colour-lime-light { color: var(--lime-light) }
 .colour-lime-dark { color: var(--lime-dark) }
 .colour-lime-darker { color: var(--lime-darker) }
 .colour-lime-darkest { color: var(--lime-darkest) }
+
+.fill-lime { fill: var(--lime-default) }
+.fill-lime-light { fill: var(--lime-light) }
+.fill-lime-dark { fill: var(--lime-dark) }
+.fill-lime-darker { fill: var(--lime-darker) }
+.fill-lime-darkest { fill: var(--lime-darkest) }
+
+.stroke-lime { stroke: var(--lime-default) }
+.stroke-lime-light { stroke: var(--lime-light) }
+.stroke-lime-dark { stroke: var(--lime-dark) }
+.stroke-lime-darker { stroke: var(--lime-darker) }
+.stroke-lime-darkest { stroke: var(--lime-darkest) }
+
+.border-colour-lime { border-color: var(--lime-default) }
+.border-colour-lime-light { border-color: var(--lime-light) }
+.border-colour-lime-dark { border-color: var(--lime-dark) }
+.border-colour-lime-darker { border-color: var(--lime-darker) }
+.border-colour-lime-darkest { border-color: var(--lime-darkest) }
+
 .background-colour-lime { background-color: var(--lime-default) }
 .background-colour-lime-light { background-color: var(--lime-light) }
 .background-colour-lime-dark { background-color: var(--lime-dark) }
 .background-colour-lime-darker { background-color: var(--lime-darker) }
 .background-colour-lime-darkest { background-color: var(--lime-darkest) }
 
+/* Magenta secondary colours */
 .colour-magenta { color: var(--magenta-default) }
 .colour-magenta-light { color: var(--magenta-light) }
 .colour-magenta-dark { color: var(--magenta-dark) }
 .colour-magenta-darker { color: var(--magenta-darker) }
 .colour-magenta-darkest { color: var(--magenta-darkest) }
+
+.fill-magenta { fill: var(--magenta-default) }
+.fill-magenta-light { fill: var(--magenta-light) }
+.fill-magenta-dark { fill: var(--magenta-dark) }
+.fill-magenta-darker { fill: var(--magenta-darker) }
+.fill-magenta-darkest { fill: var(--magenta-darkest) }
+
+.stroke-magenta { stroke: var(--magenta-default) }
+.stroke-magenta-light { stroke: var(--magenta-light) }
+.stroke-magenta-dark { stroke: var(--magenta-dark) }
+.stroke-magenta-darker { stroke: var(--magenta-darker) }
+.stroke-magenta-darkest { stroke: var(--magenta-darkest) }
+
+.border-colour-magenta { border-color: var(--magenta-default) }
+.border-colour-magenta-light { border-color: var(--magenta-light) }
+.border-colour-magenta-dark { border-color: var(--magenta-dark) }
+.border-colour-magenta-darker { border-color: var(--magenta-darker) }
+.border-colour-magenta-darkest { border-color: var(--magenta-darkest) }
+
 .background-colour-magenta { background-color: var(--magenta-default) }
 .background-colour-magenta-light { background-color: var(--magenta-light) }
 .background-colour-magenta-dark { background-color: var(--magenta-dark) }
 .background-colour-magenta-darker { background-color: var(--magenta-darker) }
 .background-colour-magenta-darkest { background-color: var(--magenta-darkest) }
 
+/* Orange secondary colours */
 .colour-orange { color: var(--orange-default) }
 .colour-orange-light { color: var(--orange-light) }
 .colour-orange-dark { color: var(--orange-dark) }
 .colour-orange-darker { color: var(--orange-darker) }
 .colour-orange-darkest { color: var(--orange-darkest) }
+
+.fill-orange { fill: var(--orange-default) }
+.fill-orange-light { fill: var(--orange-light) }
+.fill-orange-dark { fill: var(--orange-dark) }
+.fill-orange-darker { fill: var(--orange-darker) }
+.fill-orange-darkest { fill: var(--orange-darkest) }
+
+.stroke-orange { stroke: var(--orange-default) }
+.stroke-orange-light { stroke: var(--orange-light) }
+.stroke-orange-dark { stroke: var(--orange-dark) }
+.stroke-orange-darker { stroke: var(--orange-darker) }
+.stroke-orange-darkest { stroke: var(--orange-darkest) }
+
+.border-colour-orange { border-color: var(--orange-default) }
+.border-colour-orange-light { border-color: var(--orange-light) }
+.border-colour-orange-dark { border-color: var(--orange-dark) }
+.border-colour-orange-darker { border-color: var(--orange-darker) }
+.border-colour-orange-darkest { border-color: var(--orange-darkest) }
+
 .background-colour-orange { background-color: var(--orange-default) }
 .background-colour-orange-light { background-color: var(--orange-light) }
 .background-colour-orange-dark { background-color: var(--orange-dark) }
 .background-colour-orange-darker { background-color: var(--orange-darker) }
 .background-colour-orange-darkest { background-color: var(--orange-darkest) }
 
+/* Purple secondary colours */
 .colour-purple { color: var(--purple-default) }
 .colour-purple-light { color: var(--purple-light) }
 .colour-purple-dark { color: var(--purple-dark) }
 .colour-purple-darker { color: var(--purple-darker) }
 .colour-purple-darkest { color: var(--purple-darkest) }
+
+.fill-purple { fill: var(--purple-default) }
+.fill-purple-light { fill: var(--purple-light) }
+.fill-purple-dark { fill: var(--purple-dark) }
+.fill-purple-darker { fill: var(--purple-darker) }
+.fill-purple-darkest { fill: var(--purple-darkest) }
+
+.stroke-purple { stroke: var(--purple-default) }
+.stroke-purple-light { stroke: var(--purple-light) }
+.stroke-purple-dark { stroke: var(--purple-dark) }
+.stroke-purple-darker { stroke: var(--purple-darker) }
+.stroke-purple-darkest { stroke: var(--purple-darkest) }
+
+.border-colour-purple { border-color: var(--purple-default) }
+.border-colour-purple-light { border-color: var(--purple-light) }
+.border-colour-purple-dark { border-color: var(--purple-dark) }
+.border-colour-purple-darker { border-color: var(--purple-darker) }
+.border-colour-purple-darkest { border-color: var(--purple-darkest) }
+
 .background-colour-purple { background-color: var(--purple-default) }
 .background-colour-purple-light { background-color: var(--purple-light) }
 .background-colour-purple-dark { background-color: var(--purple-dark) }

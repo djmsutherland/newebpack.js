@@ -7,6 +7,10 @@
   height: 100%;
 }
 
+.sensis-tabs-content {
+  overflow-x: scroll;
+}
+
 .sensis-tabs {
   display: flex;
   flex: 0 0 auto;
