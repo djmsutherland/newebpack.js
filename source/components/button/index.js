@@ -6,10 +6,11 @@ import template from "./component.html"
 const SensisButton = Vue.component("sensis-button", {
   data() {
     return {
+      colourClass: `background-colour-${this.colour}`,
       iconClass: `sensis-icon-${this.icon}`
     }
   },
-  props: ["icon", "text"],
+  props: ["colour", "icon", "text"],
   template
 })
 
