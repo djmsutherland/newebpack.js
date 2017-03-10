@@ -8,6 +8,7 @@ import "../../components/select"
 import "../../components/switch"
 import "../../components/tab"
 import "../../components/tabs"
+import "../../components/toggle"
 
 import Vue from "vue"
 import store from "./services/store"

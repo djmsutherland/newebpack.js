@@ -193,10 +193,10 @@
               <form class="sensis-form" v-on:submit.prevent="show.flash = true">
                 <sensis-input label="Email address" type="email"></sensis-input>
                 <sensis-select label="Job role" :options="['', 'Owner', 'Marketing manager', 'Manager', 'Support']"></sensis-select>
-                <sensis-select label="Marketing knowledge" :options="['', 'Biginner', 'Intermediate', 'Advanced']"></sensis-select>
+                <sensis-select label="Marketing knowledge" :options="['', 'Beginner', 'Intermediate', 'Advanced']"></sensis-select>
                 <sensis-select label="Age of business" :options="['', 'Less than 1 year', '1 - 2 years', '3 - 5 years', '6+ years']"></sensis-select>
                 <sensis-select label="12 month business goal" :options="['', 'Start my business', 'Grow my business', 'Stay at the same level', 'Winding down my business']"></sensis-select>
-                <sensis-button icon="check" text="Save"></sensis-button>
+                <sensis-button icon="check" text="Save my profile"></sensis-button>
               </form>
             </div>
           </sensis-tab>
@@ -214,7 +214,7 @@
                   <sensis-switch label="Free event invitations" type="checkbox"></sensis-switch>
                   <sensis-switch label="Insights and benchmarks" type="checkbox"></sensis-switch>
                 </fieldset>
-                <sensis-button icon="check" text="Save"></sensis-button>
+                <sensis-button icon="check" text="Save my interests"></sensis-button>
               </form>
             </div>
           </sensis-tab>
@@ -230,12 +230,15 @@
                   <sensis-switch label="Fortnightly" type="radio" group="frequency"></sensis-switch>
                   <sensis-switch label="Monthly" type="radio" group="frequency"></sensis-switch>
                   <sensis-switch label="Never" type="radio" group="frequency" toggle="unsubscribe"></sensis-switch>
+                  <sensis-toggle group="frequency" handle="unsubscribe">
+                    <sensis-switch label="Take a break for 90 days" type="radio" group="unsubscribe"></sensis-switch>
+                    <sensis-switch label="Unsubscribe from all" type="radio" group="unsubscribe" toggle="reason"></sensis-switch>
+                    <sensis-toggle group="unsubscribe" handle="reason">
+                      <sensis-select label="Tell us why" :options="['', 'It\'s not you, it\'s me', 'I\'m getting too many emails from you', 'These are irrelevant for my business', 'I don\'t have time to read them', 'I\'m no longer interested in these emails', 'Other']"></sensis-select>
+                    </sensis-toggle>
+                  </sensis-toggle>
                 </fieldset>
-                <fieldset class="sensis-field sensis-field-group" v-show="show.unsubscribe">
-                  <sensis-switch label="Take a break for 90 days" type="radio" group="unsubscribe"></sensis-switch>
-                  <sensis-switch label="Unsubscribe from all" type="radio" group="unsubscribe"></sensis-switch>
-                </fieldset>
-                <sensis-button icon="check" text="Save"></sensis-button>
+                <sensis-button icon="check" text="Save my frequency"></sensis-button>
               </form>
             </div>
           </sensis-tab>

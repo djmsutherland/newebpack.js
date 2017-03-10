@@ -1,7 +1,6 @@
 const store = {
   show: {
-    flash: false,
-    unsubscribe: false
+    flash: false
   }
 }
 

@@ -26,6 +26,10 @@
   transition: all 150ms ease-in-out;
 }
 
+.sensis-message.sensis-label {
+  top: 15%;
+}
+
 .sensis-input:focus {
   outline: none;
 }

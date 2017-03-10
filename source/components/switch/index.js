@@ -1,13 +1,15 @@
 import "./component.css"
 
 import Vue from "vue"
+import bus from "../../assets/javascripts/services/bus"
+import helpers from "../../assets/javascripts/helpers"
 import store from "../../assets/javascripts/services/store"
 import template from "./component.html"
 
 const SensisSwitch = Vue.component("sensis-switch", {
   computed: {
     id() {
-      return `sensis-${this.label.toLowerCase().replace(/ /g, "-")}`
+      return helpers.identify(this.label)
     }
   },
   data() {
@@ -15,9 +17,10 @@ const SensisSwitch = Vue.component("sensis-switch", {
   },
   methods: {
     action() {
-      if (this.toggle) {
-        store.show[this.toggle] = true
-      }
+      bus.$emit("toggle-component", {
+        group: this.group,
+        handle: this.toggle
+      })
     }
   },
   props: ["group", "label", "toggle", "type"],
