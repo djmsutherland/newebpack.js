@@ -12,11 +12,11 @@ const SensisTab = Vue.component("sensis-tab", {
   },
   data() {
     return {
-      isActive: false
+      active: false
     }
   },
   mounted() {
-    this.isActive = this.selected
+    this.active = this.selected
   },
   props: {
     name: { required: true },

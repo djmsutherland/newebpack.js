@@ -15,12 +15,20 @@ const SensisToggle = Vue.component("sensis-toggle", {
   },
   methods: {
     toggle(data) {
-      if (data.handle === this.handle) {
+      if (data.type === "checkbox" && data.toggle === this.handle) {
+        this.active = !this.active
+
+        return
+      }
+      if (data.type === "checkbox" && data.toggle !== this.handle) {
+        return
+      }
+      if (data.type === "radio" && data.toggle === this.handle) {
         this.active = true
 
         return
       }
-      if (data.group === this.group) {
+      if (data.type === "radio" && data.group === this.group) {
         this.active = false
       }
     }

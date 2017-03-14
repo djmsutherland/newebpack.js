@@ -1,0 +1,46 @@
+@import "../variables";
+
+#sensis-loader {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+#sensis-loader.fadeout {
+  animation: fadeout 600ms;
+  animation-fill-mode: forwards;
+}
+
+#sensis-loader .spinner {
+  margin: var(--spacing-16);
+  width: var(--spacing-48);
+  height: var(--spacing-48);
+  position: relative;
+  text-align: center;
+  animation: rotate 2.0s infinite linear;
+}
+
+#sensis-loader .spinner .dot {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #333;
+  border-radius: 100%;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+
+#sensis-loader .spinner .dot:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1.0s;
+}

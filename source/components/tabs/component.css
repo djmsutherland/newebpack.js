@@ -29,10 +29,6 @@
   text-decoration: none;
 }
 
-.sensis-tabs a:hover {
-  background-color: var(--grey-lightest);
-}
-
 .sensis-tab-icon {
   display: block;
   margin: 10px auto 5px;
@@ -136,6 +132,10 @@
     max-width: 30rem;
   }
 
+  .sensis-tabs a:hover {
+    background-color: var(--grey-lightest);
+  }
+  
   .sensis-tabs a:first-child {
     border-top-left-radius: var(--spacing-8);
     border-bottom-left-radius: var(--spacing-8);

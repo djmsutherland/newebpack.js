@@ -1,0 +1,8 @@
+#sensis-application {
+  opacity: 0;
+}
+
+#sensis-application.fadein {
+  animation: fadein 600ms linear 600ms;
+  animation-fill-mode: forwards;
+}

@@ -14,19 +14,19 @@ const SensisTabs = Vue.component("sensis-tabs", {
     }
   },
   mounted() {
-    this.setInitialColour()
+    this.colourise()
   },
   methods: {
-    selectTab(selectedTab) {
-      this.tabs.forEach(tab => {
-        tab.isActive = tab.href === selectedTab.href
-      })
-      this.colourClass = `tab-${selectedTab.colour}`
-    },
-    setInitialColour() {
-      const [active] = this.tabs.filter(tab => tab.isActive)
+    colourise() {
+      const [active] = this.tabs.filter(tab => tab.active)
 
       this.colourClass = `tab-${active.$options.propsData.colour}`
+    },
+    select(tab) {
+      this.tabs.forEach(item => {
+        item.active = item.href === tab.href
+      })
+      this.colourClass = `tab-${tab.colour}`
     }
   },
   template

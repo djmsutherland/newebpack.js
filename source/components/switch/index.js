@@ -19,7 +19,8 @@ const SensisSwitch = Vue.component("sensis-switch", {
     action() {
       bus.$emit("toggle-component", {
         group: this.group,
-        handle: this.toggle
+        toggle: this.toggle,
+        type: this.type
       })
     }
   },

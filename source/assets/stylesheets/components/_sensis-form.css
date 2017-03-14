@@ -37,7 +37,7 @@
 .sensis-label.active,
 .sensis-select:focus + .sensis-label,
 .sensis-input:focus + .sensis-label {
-  font-size: 80%;
+  font-size: 70%;
   top: 0%;
   margin-top: -var(--spacing-16);
   padding-left: 0;

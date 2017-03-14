@@ -1,6 +1,6 @@
+const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const webpack = require("webpack")
 const { resolve } = require("path")
-const autoprefixer = require("autoprefixer")
 const cssimport = require("postcss-import")
 const cssnext = require("postcss-cssnext")
 
@@ -8,7 +8,7 @@ module.exports = env => {
   return {
     entry: "./assets/javascripts/index.js",
     output: {
-      filename: "sensis-ui-components.js",
+      filename: "sens.js",
       path: resolve(__dirname, "distribute"),
       pathinfo: !env.prod
     },
@@ -22,8 +22,8 @@ module.exports = env => {
     },
     bail: env.prod,
     module: {
-      loaders: [
-        { test: /\.css$/, loader: "style-loader!css-loader!postcss-loader" },
+      rules: [
+        { test: /\.css$/, use: ExtractTextPlugin.extract({ fallback: "style-loader", use: ["css-loader", "postcss-loader"]})},
         { test: /\.html$/, loader: "html-loader" },
         { test: /\.js$/, loader: "babel-loader!eslint-loader", exclude: /node_modules/ },
         { test: /\.woff$/, loader: "url-loader" },
@@ -31,6 +31,7 @@ module.exports = env => {
       ]
     },
     plugins: [
+      new ExtractTextPlugin("sen.css"),
       new webpack.LoaderOptionsPlugin({
         options: {
           postcss: [

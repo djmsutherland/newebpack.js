@@ -3,7 +3,7 @@
     <slot></slot>
   </section>
   <nav class="sensis-footer sensis-tabs">
-    <a v-for="tab in tabs" :href="tab.href" @click="selectTab(tab)" class="label" :class="{ 'is-active': tab.isActive }">
+    <a v-for="tab in tabs" :href="tab.href" @click="select(tab)" class="label-small" :class="{ 'is-active': tab.active }">
       <i class="sensis-tab-icon"></i>
       {{ tab.name }}
     </a>
