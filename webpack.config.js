@@ -27,7 +27,8 @@ module.exports = env => {
         { test: /\.html$/, loader: "html-loader" },
         { test: /\.js$/, loader: "babel-loader!eslint-loader", exclude: /node_modules/ },
         { test: /\.woff$/, loader: "url-loader" },
-        { test: /\.(ttf|eot|svg)$/, loader: "file-loader" }
+        { test: /\.svg$/, loader: "svg-sprite-loader!svgo-loader", include: resolve("./assets/images") },
+        { test: /\.(ttf|eot|svg)$/, loader: "file-loader?name=[name].[ext]" }
       ]
     },
     plugins: [
