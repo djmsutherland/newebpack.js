@@ -1,0 +1,9 @@
+{
+  "env": {
+    "test": {
+      "plugins": [
+        ["__coverage__", {"ignore": "*_spec.*"}]
+      ]
+    }
+  }
+}

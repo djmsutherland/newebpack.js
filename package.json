@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack --env.dev",
     "build:prod": "webpack --env.prod -p",
+    "coverage": "istanbul check-coverage --statements 60 --branches 80 --functions 0 --lines 60",
     "clean": "rimraf distribute",
     "clean:copy": "npm run clean && npm run copy",
     "copy": "mkdir distribute && cp source/index.html distribute/index.html",
@@ -15,7 +16,7 @@
     "start": "webpack-dev-server --env.dev --content-base source",
     "test": "karma start",
     "test:watch": "npm test -- --auto-watch --no-single-run",
-    "validate": "npm-run-all --parallel validate:* lint test",
+    "validate": "npm-run-all --parallel validate:* lint test --serial coverage",
     "validate:dev": "webpack-validator webpack.config.js --env.dev",
     "validate:prod": "webpack-validator webpack.config.js --env.prod"
   },
@@ -32,13 +33,16 @@
   "devDependencies": {
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
+    "babel-plugin-__coverage__": "^11.0.0",
     "chai": "^3.5.0",
     "css-loader": "^0.26.2",
     "eslint": "^3.16.1",
     "eslint-loader": "^1.6.3",
+    "istanbul": "^0.4.5",
     "karma": "^1.5.0",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
     "karma-mocha": "^1.3.0",
     "karma-webpack": "^2.0.2",
     "mocha": "^3.2.0",
